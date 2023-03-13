@@ -25,14 +25,14 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-html,
+/* html,
 body{
 	height: 100%;
-}
+} */
 
 /* Set core body defaults */
 body {
-  /* min-height: 100vh; KP takes this becaus adds above*/
+  min-height: 100vh; /*KP takes this becaus adds above. Didn t work for me*/
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }

@@ -1,3 +1,13 @@
 :root{
-   --color1: #ffffff;
+   --color1: #4650BD;
+   
+   --colorText: #ffffff;
+
+   --gradient1: linear-gradient(#304968, #36C1A0 50% 70%, #4650BD);
+}
+
+body{
+   background-image: var(--gradient1);
+   background-repeat: no-repeat;
+
 }
