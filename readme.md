@@ -5,4 +5,13 @@ https://www.figma.com/file/sQD8oUIP2gke3j5r0I502e/CodeChella-%7C-Challenge-I---F
 https://trello.com/b/uZ4izZXN/challenge-alura
 
 
-- [ ] Structure whole HTML
+- [X] Structure whole HTML
+- [X] Create reset css
+- [X] Create color structure
+- [X] Create font structure
+- [X] Create utility class for container
+- [X] Header inner positioning
+- [X] Header animation
+- [X] Header padding
+- [X] Create burger menu with label
+- [X] Style menu options

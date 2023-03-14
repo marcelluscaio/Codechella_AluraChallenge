@@ -1,6 +1,7 @@
 header{
    position: relative;
    
+   padding-block: calc(var(--fs-2) * 1.75);
    background-color: var(--colorMain);
 }
 
@@ -23,15 +24,83 @@ header > nav > ul :is(a, label){
    z-index: 1;
 }
 
+header nav a > img{
+   width: min(65vw, 15rem + 5vw);
+}
+
+header input[type="checkbox"]{
+   display: none;
+}
+
+header label{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+
+   --label-size: var(--fs-5);
+   height: var(--label-size);
+   width: var(--label-size);
+}
+
+header label > div{   
+   width: 75%;
+   height: 9%;
+   background-color: var(--colorText);
+}
+
 .menu-options{   
    position: absolute;
    top: 0;
    right: 0;
+
+   padding: var(--fs-2);
+   background-color: var(--colorMain);
    
    transform: translateY(-100%);
    transition: top 1s ease-in, transform 1s ease-in;
-
 }
+
+.menu-options li{
+   position: relative;
+
+   padding-block: .5em;
+
+   font-size: var(--fs-2);
+   text-align: center;
+}
+
+.menu-options li:first-child{
+   padding-top: 0;
+}
+
+.menu-options li:last-child{
+   padding-bottom: 0;
+}
+
+.menu-options li:not(:last-child)::after{
+   content: '';
+
+   display: block;
+
+   position: absolute;
+   bottom: 0;
+
+   height: 1px;
+   width: 100%;
+   background-color: var(--colorText);
+}
+
+.menu-options a{
+   color: var(--colorText);
+   font-family: var(--ff-raleway);
+   font-weight: var(--fw-3);
+   font-size: var(--fs-2);
+   line-height: 2;
+   text-decoration: none;
+}
+
+
 
 input:checked + label + .menu-options{
    top: 100%;

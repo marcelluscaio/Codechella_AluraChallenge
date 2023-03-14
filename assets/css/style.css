@@ -23,14 +23,7 @@
    --container-width: 86.5%;
 }
 
-/*
-Utility classes
-container - margin-inline auto + width = var(--container width)
-
-Usar before no header para passar o menu por trás dele
-
-
-*/
+/*Utility classes*/
 .container{
    width: var(--container-width);
    margin-inline: auto;
