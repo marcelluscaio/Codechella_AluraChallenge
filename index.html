@@ -10,30 +10,37 @@
 
    <link rel="stylesheet" href="assets/css/reset.css">
    <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/header.css">
    <title>CodeChella</title>
 </head>
 <body>
    <header>
-      <nav>
+      <nav class="container">
          <ul>
             <li>
-               <a href="#">CodeChella</a>
+               <a href="#">
+                  <img src="assets/images/LogoWhite.svg" alt="Logo Codechella" />
+               </a>
             </li>
-            <li>
-               <ul>
-                  <li>
-                     <a href="#">A experiência</a>
-                  </li>
-                  <li>
-                     <a href="#">Mapa de Setores</a>
-                  </li>
-                  <li>
-                     <a href="#">Informações</a>
-                  </li>
-                  <li>
-                     <a href="#">Ingresso</a>
-                  </li>
-               </ul>
+            <li>               
+               <div>               
+                  <input type="checkbox" id="burgerBtn">
+                  <label for="burgerBtn"></label>
+                  <ul class="menu-options">
+                     <li>
+                        <a href="#">A experiência</a>
+                     </li>
+                     <li>
+                        <a href="#">Mapa de Setores</a>
+                     </li>
+                     <li>
+                        <a href="#">Informações</a>
+                     </li>
+                     <li>
+                        <a href="#">Ingresso</a>
+                     </li>
+                  </ul>
+               </div>
             </li>
          </ul>
       </nav>   

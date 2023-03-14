@@ -1,0 +1,40 @@
+header{
+   position: relative;
+   
+   background-color: var(--colorMain);
+}
+
+header::after{
+   content: '';
+
+   position: absolute;
+   inset: 0;
+   background-color: var(--colorMain);
+}
+
+header nav > ul{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header > nav > ul :is(a, label){
+   position: relative;
+   z-index: 1;
+}
+
+.menu-options{   
+   position: absolute;
+   top: 0;
+   right: 0;
+   
+   transform: translateY(-100%);
+   transition: top 1s ease-in, transform 1s ease-in;
+
+}
+
+input:checked + label + .menu-options{
+   top: 100%;
+   transform: translateX(0);
+
+}

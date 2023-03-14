@@ -14,16 +14,29 @@
    --fw-3: 700;
    --fw-4: 800;
 
-   --fs-1: clamp(0.88rem, calc(0.77rem + 0.54vw), 1.25rem); /*14px - 20px*/
-   --fs-2: clamp(1.09rem, calc(0.93rem + 0.82vw), 1.67rem); /*17px - 26px*/
+   --fs-1: clamp(0.88rem, calc(0.77rem + 0.54vw), 1.25rem);/*14px - 20px*/
+   --fs-2: clamp(1.09rem, calc(0.93rem + 0.82vw), 1.67rem);/*17px - 26px*/
    --fs-3: clamp(1.37rem, calc(1.12rem + 1.22vw), 2.22rem);/*21px - 35px*/
    --fs-4: clamp(1.71rem, calc(1.35rem + 1.79vw), 2.96rem);/*27px - 47px*/
    --fs-5: clamp(2.14rem, calc(1.62rem + 2.59vw), 3.95rem);/*34px - 63px*/
+
+   --container-width: 86.5%;
 }
 
+/*
+Utility classes
+container - margin-inline auto + width = var(--container width)
+
+Usar before no header para passar o menu por trás dele
+
+
+*/
+.container{
+   width: var(--container-width);
+   margin-inline: auto;
+}
 
 body{
    background-image: var(--gradient1);
    background-repeat: no-repeat;
-
 }
