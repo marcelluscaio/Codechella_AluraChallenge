@@ -33,3 +33,9 @@ body{
    background-image: var(--gradient1);
    background-repeat: no-repeat;
 }
+
+@media screen and (min-width: 45em) {
+   :root{
+      --container-width: 84%;
+   }
+}

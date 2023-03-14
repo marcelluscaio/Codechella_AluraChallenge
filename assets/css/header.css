@@ -1,7 +1,8 @@
 header{
    position: relative;
    
-   padding-block: calc(var(--fs-2) * 1.75);
+   --padding-header: calc(var(--fs-2) * 1.75);
+   padding-block: var(--padding-header);
    background-color: var(--colorMain);
 }
 
@@ -85,9 +86,11 @@ header label > div{
 
    position: absolute;
    bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
 
    height: 1px;
-   width: 100%;
+   width: 90%;
    background-color: var(--colorText);
 }
 
@@ -100,10 +103,47 @@ header label > div{
    text-decoration: none;
 }
 
-
-
 input:checked + label + .menu-options{
    top: 100%;
    transform: translateX(0);
 
+}
+
+/*720px*/
+@media screen and (min-width: 45em) {
+   header nav > ul{
+      flex-direction: column;
+      gap: var(--padding-header);
+   }
+
+   nav > ul > li{
+      width: 100%;
+   }
+
+   header nav a > img{
+      margin-inline: auto;
+   }
+   
+   header label{
+      display: none;
+   }
+
+   .menu-options{   
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      position: relative;
+      top: unset;
+      right: unset;
+
+      padding: 0;
+      
+      transform: unset;
+      transition: unset;
+   }
+
+   .menu-options > li{
+      padding-block: 0;
+   }  
 }

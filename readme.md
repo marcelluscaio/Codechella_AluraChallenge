@@ -15,3 +15,4 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [X] Header padding
 - [X] Create burger menu with label
 - [X] Style menu options
+- [ ] Header on desktop
