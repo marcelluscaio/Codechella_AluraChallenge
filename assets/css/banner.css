@@ -14,14 +14,33 @@
 .banner > h1{
    width: 100%;
 
-   color: var(--colorText);
+   background-image: var(--gradient-2);
+   -webkit-background-clip: text;
+   background-clip: text;
+   background-size: 400%;
+   background-position: 0%;
+
+   color: transparent;
    font-family: var(--ff-calistoga);
    font-weight: var(--fw-1);
    font-size: var(--fs-5);
    line-height: 1.25;
    text-align: center;
+
+   animation-name: background-slide;
+   animation-duration: 23s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+@keyframes background-slide{
+   to{
+      background-position: 100%;
+   }
 }
 
 .banner > h1 > span{
    display: block;
+
+   color: var(--colorText);
 }
