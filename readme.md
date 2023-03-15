@@ -15,4 +15,10 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [X] Header padding
 - [X] Create burger menu with label
 - [X] Style menu options
-- [ ] Header on desktop
+- [X] Header on desktop
+- [X]  Make font better on 1440px
+- [ ] Make burger animation
+- [ ] Make active link marking
+- [ ] Make animation when hovering links and when clicking
+
+

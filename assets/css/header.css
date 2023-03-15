@@ -148,7 +148,8 @@ input:checked + label + .menu-options{
    }  
 }
 
-@media screen and (min-width: 45em) {
+/*1024px*/
+@media screen and (min-width: 64em) {
    header nav > ul{
       flex-direction: row;
       justify-content: space-between;

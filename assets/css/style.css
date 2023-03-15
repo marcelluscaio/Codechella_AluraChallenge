@@ -20,6 +20,13 @@
    --fs-4: clamp(1.71rem, calc(1.35rem + 1.79vw), 2.96rem);/*27px - 47px*/
    --fs-5: clamp(2.14rem, calc(1.62rem + 2.59vw), 3.95rem);/*34px - 63px*/
 
+  --fs-1: clamp(0.88rem, calc(0.79rem + 0.45vw), 1.50rem);
+  --fs-2: clamp(1.09rem, calc(0.96rem + 0.65vw), 2.00rem);
+  --fs-3: clamp(1.37rem, calc(1.18rem + 0.93vw), 2.67rem);
+  --fs-4: clamp(1.71rem, calc(1.45rem + 1.32vw), 3.55rem);
+  --fs-5: clamp(2.14rem, calc(1.76rem + 1.86vw), 4.74rem);
+
+
    --container-width: 86.5%;
 }
 
