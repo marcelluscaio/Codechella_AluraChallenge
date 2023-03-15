@@ -18,7 +18,7 @@
    -webkit-background-clip: text;
    background-clip: text;
    background-size: 500%;
-   background-position: 0%;
+   background-position: 100%;
 
    color: transparent;
    font-family: var(--ff-calistoga);
@@ -36,7 +36,7 @@
 
 @keyframes background-slide{
    to{
-      background-position: 100%;
+      background-position: 0%;
    }
 }
 

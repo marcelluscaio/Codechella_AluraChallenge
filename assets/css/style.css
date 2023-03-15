@@ -5,7 +5,7 @@
    --colorText: #ffffff;
 
    --gradient-1: linear-gradient(#304968, #36C1A0 50% 70%, #4650BD);
-   --gradient-2: linear-gradient(90deg, #ffffff 20%, #4650BD, #36C1A0, #304968, #ffffff 70%);
+   --gradient-2: linear-gradient(160deg, #ffffff 20%, #4650BD, #36C1A0, #304968, #ffffff 70%);
 
    --ff-calistoga: 'Calistoga', cursive;
    --ff-raleway: 'Raleway', sans-serif;
@@ -23,14 +23,15 @@
    --fs-5: clamp(2.14rem, calc(1.62rem + 2.59vw), 3.95rem);/*34px - 63px*/
 
 /*Done with 320 - 2560. Check if it fits with 360 and 1440 view */
-  --fs-1: clamp(0.81rem, calc(0.71rem + 0.49vw), 1.50rem); /*13px a 24px*/
-  --fs-2: clamp(1.02rem, calc(0.88rem + 0.70vw), 2.00rem);/*16.25px a 31.99px */
-  --fs-3: clamp(1.27rem, calc(1.07rem + 1.00vw), 2.67rem);/*20.31px a 42.65px*/
-  --fs-4: clamp(1.59rem, calc(1.31rem + 1.40vw), 3.55rem);/*25.39px a 58.65px*/
-  --fs-5: clamp(1.98rem, calc(1.59rem + 1.97vw), 4.74rem);/*31.74px a 75.78px*/
+   --fs-1: clamp(0.81rem, calc(0.71rem + 0.49vw), 1.50rem); /*13px a 24px*/
+   --fs-2: clamp(1.02rem, calc(0.88rem + 0.70vw), 2.00rem);/*16.25px a 31.99px */
+   --fs-3: clamp(1.27rem, calc(1.07rem + 1.00vw), 2.67rem);/*20.31px a 42.65px*/
+   --fs-4: clamp(1.59rem, calc(1.31rem + 1.40vw), 3.55rem);/*25.39px a 58.65px*/
+   --fs-5: clamp(1.98rem, calc(1.59rem + 1.97vw), 4.74rem);/*31.74px a 75.78px*/
 
 
    --container-width: 86.5%;
+
 }
 
 /*Utility classes*/
