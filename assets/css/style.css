@@ -5,7 +5,7 @@
    --colorText: #ffffff;
 
    --gradient-1: linear-gradient(#304968, #36C1A0 50% 70%, #4650BD);
-   --gradient-2: linear-gradient(90deg, #ffffff 20%, #4650BD, #36C1A0, #304968, #ffffff 80%);
+   --gradient-2: linear-gradient(90deg, #ffffff 20%, #4650BD, #36C1A0, #304968, #ffffff 70%);
 
    --ff-calistoga: 'Calistoga', cursive;
    --ff-raleway: 'Raleway', sans-serif;

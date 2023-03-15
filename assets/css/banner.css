@@ -5,8 +5,8 @@
    height: 75vw;
    max-height: 60vh;
    background-image: url('../images/imageBoreal.jpg');
-   background-size: cover;
-   background-position: 50% 50%;
+   background-size: 115%;
+   background-position: left 50% top -6vw;
    background-repeat: no-repeat;
    background-attachment: fixed;
 }
@@ -17,7 +17,7 @@
    background-image: var(--gradient-2);
    -webkit-background-clip: text;
    background-clip: text;
-   background-size: 400%;
+   background-size: 500%;
    background-position: 0%;
 
    color: transparent;
@@ -28,9 +28,10 @@
    text-align: center;
 
    animation-name: background-slide;
-   animation-duration: 23s;
+   animation-duration: 25s;
    animation-timing-function: linear;
    animation-iteration-count: infinite;
+   animation-delay: 1s;
 }
 
 @keyframes background-slide{
@@ -43,4 +44,12 @@
    display: block;
 
    color: var(--colorText);
+}
+
+/*512px*/
+@media  (min-width: 32em) {
+   .banner{
+      background-size: 100%;
+      background-position: left 50% top -15vw;
+   }
 }
