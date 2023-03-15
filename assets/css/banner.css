@@ -53,3 +53,20 @@
       background-position: left 50% top -15vw;
    }
 }
+
+/*720px*/
+@media screen and (min-width: 45em) {
+   .banner{
+      max-height: 67.4vh;   
+   }
+}
+
+/*1024px*/
+@media screen and (min-width: 64em) {
+   .banner{
+      max-height: 64.3vh;
+      
+      background-position: left 50% top -47.5vw;
+   }
+
+}
