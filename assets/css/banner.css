@@ -1,0 +1,27 @@
+.banner{
+   display: flex;
+   align-items: center;
+   
+   height: 75vw;
+   max-height: 60vh;
+   background-image: url('../images/imageBoreal.jpg');
+   background-size: cover;
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+.banner > h1{
+   width: 100%;
+
+   color: var(--colorText);
+   font-family: var(--ff-calistoga);
+   font-weight: var(--fw-1);
+   font-size: var(--fs-5);
+   line-height: 1.25;
+   text-align: center;
+}
+
+.banner > h1 > span{
+   display: block;
+}
