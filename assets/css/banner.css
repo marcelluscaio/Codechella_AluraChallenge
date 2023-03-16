@@ -11,6 +11,17 @@
    background-attachment: fixed;
 }
 
+.banner--second{
+   height: 93.9vw;
+   max-height: 60vh;
+
+   background-image: url('../images/guitar.webp');
+   background-attachment: unset;
+   background-size: cover;
+   background-position: center;
+   mix-blend-mode: hard-light;
+}
+
 .banner > h1{
    width: 100%;
    background-image: var(--gradient-2);
