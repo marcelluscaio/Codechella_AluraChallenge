@@ -40,7 +40,6 @@
    width: 100%;
    max-width: 20.5em;
    padding-block: .5em;
-   /* padding-inline: 2.2em 3.2em; */
    background-color: var(--colorMain);
    border-radius: .75em;
 
@@ -96,5 +95,11 @@
 
    .general-info > article{
       width: 47%;
+   }
+
+   .general-info > article > a{
+      width: 50%;
+      max-width: unset;
+      min-width: 15em;
    }
 }

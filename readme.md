@@ -21,6 +21,12 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [ ] Make active link marking
 - [ ] Make animation when hovering links and when clicking
 - [ ] General information section - Start
+- [X] General info mobile
+- [X] General info tablet
+- [X] General info desktop
+- [X] Line-up Padding
+- [ ] Line-up font
+
 
 Project checklist
 - Whole html
