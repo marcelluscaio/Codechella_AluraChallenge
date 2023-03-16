@@ -1,0 +1,67 @@
+.general-info{
+   padding-block: var(--section-padding-block);
+}
+
+.general-info > div{
+   height: 105.6vw;
+   max-height: 85vh;
+   background-image: url('../images/musicians.webp');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 4.5vw;
+   margin-bottom: var(--section-padding-block);
+}
+
+.general-info > article{
+   font-family: var(--ff-raleway);
+   text-align: center;
+}
+
+.general-info > article > h2{
+   margin-bottom: .75em;
+
+   font-weight: var(--fw-3);
+   font-size: var(--fs-2);
+   line-height: 1.2;
+}
+
+.general-info > article > p{
+   margin-bottom: 0.92em;
+   
+   font-weight: var(--fw-2);
+   font-size: var(--fs-1);
+   line-height: 2;
+}
+
+.general-info > article > a{
+   padding-block: .5em;
+   padding-inline: 2.2em 3.2em;
+   background-color: var(--colorMain);
+   border-radius: .75em;
+
+   box-shadow: 2px 2px 2px #000000;
+   
+   color: var(--colorText);
+   font-weight: var(--fw-3);
+   font-size: var(--fs-1);
+   line-height: 2;
+   text-decoration: none;
+}
+
+.general-info > article > a::after{
+   content: '';
+
+   display: inline-block;
+
+   position: relative;
+   right: -.75em;
+   bottom: -.7em;
+
+   width: var(--fs-1);
+   height: calc(var(--fs-1) * 2);
+   background-image: url('../images/buyIcon.svg');
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: 50% 50%;
+}

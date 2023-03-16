@@ -4,7 +4,7 @@
    
    height: 75vw;
    max-height: 60vh;
-   background-image: url('../images/imageBoreal.jpg');
+   background-image: url('../images/imageBoreal.webp');
    background-size: 115%;
    background-position: left 50% top -6vw;
    background-repeat: no-repeat;
@@ -13,7 +13,6 @@
 
 .banner > h1{
    width: 100%;
-
    background-image: var(--gradient-2);
    -webkit-background-clip: text;
    background-clip: text;
@@ -68,5 +67,4 @@
       
       background-position: left 50% top -47.5vw;
    }
-
 }

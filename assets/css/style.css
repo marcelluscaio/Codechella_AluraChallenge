@@ -32,6 +32,8 @@
 
    --container-width: 86.5%;
 
+   --section-padding-block: calc(var(--fs-2) * 1.93);
+   /* --section-padding-inline: calc(var(--fs-2) * 1.5); */
 }
 
 /*Utility classes*/
@@ -43,6 +45,8 @@
 body{
    background-image: var(--gradient-1);
    background-repeat: no-repeat;
+
+   color: var(--colorText);
 }
 
 @media screen and (min-width: 45em) {

@@ -20,5 +20,18 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [ ] Make burger animation
 - [ ] Make active link marking
 - [ ] Make animation when hovering links and when clicking
+- [ ] General information section - Start
+
+Project checklist
+- Whole html
+- Define Colors
+- Define Font
+- Define Section paddings (Padding block and width)
+- Style each section
+
+Section checklist
+- Padding
+- Font
+- Images
 
 

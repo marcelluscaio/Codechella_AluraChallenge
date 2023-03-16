@@ -11,6 +11,7 @@ header::after{
 
    position: absolute;
    inset: 0;
+
    background-color: var(--colorMain);
 }
 
@@ -105,8 +106,8 @@ header label > div{
 
 input:checked + label + .menu-options{
    top: 100%;
-   transform: translateX(0);
 
+   transform: translateX(0);
 }
 
 /*720px*/
