@@ -69,6 +69,10 @@
    .banner{
       max-height: 67.4vh;   
    }
+
+   .banner--second{
+      max-height: 59.3vh;
+   }
 }
 
 /*1024px*/
@@ -77,5 +81,11 @@
       max-height: 64.3vh;
       
       background-position: left 50% top -47.5vw;
+   }
+
+   .banner--second{
+      max-height: 59.3vh;
+      
+      background-position: left 50% bottom 60%;
    }
 }
