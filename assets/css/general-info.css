@@ -26,6 +26,10 @@
    line-height: 1.2;
 }
 
+.general-info > article > h2 > span{
+   display: block;
+}
+
 .general-info > article > p{
    margin-bottom: 0.92em;
    

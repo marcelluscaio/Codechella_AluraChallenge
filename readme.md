@@ -26,6 +26,8 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [X] General info desktop
 - [X] Line-up Padding
 - [ ] Line-up font
+- [X] Set Selection
+- [ ] Set scrollbar
 
 
 Project checklist

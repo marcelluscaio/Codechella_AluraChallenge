@@ -43,6 +43,12 @@
    margin-inline: auto;
 }
 
+::selection{
+   background-color: var(--colorMain);
+
+   color: var(--colorText);
+}
+
 body{
    background-image: var(--gradient-1);
    background-repeat: no-repeat;
