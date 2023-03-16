@@ -127,20 +127,7 @@
 
 /*1024px*/
 @media screen and (min-width: 64em) {
-   .lineup > ul{
-      gap: 0;
-      row-gap: var(--fs-2);
-   }
-
    .lineup li:nth-child(n + 2):nth-child(-n + 5){
-      min-width: 25%;
-   }
-
-   .lineup li:nth-child(n + 6):nth-child(-n + 9){
       min-width: 22%;
-   }
-
-   .lineup li:nth-child(n + 7){
-      margin-right: 1.5em;
    }
 }
