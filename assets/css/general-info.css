@@ -22,7 +22,7 @@
    margin-bottom: .75em;
 
    font-weight: var(--fw-3);
-   font-size: var(--fs-2);
+   font-size: var(--fs-3);
    line-height: 1.2;
 }
 
@@ -35,12 +35,16 @@
 }
 
 .general-info > article > a{
+   display: inline-block;
+   
+   width: 100%;
+   max-width: 20.5em;
    padding-block: .5em;
-   padding-inline: 2.2em 3.2em;
+   /* padding-inline: 2.2em 3.2em; */
    background-color: var(--colorMain);
    border-radius: .75em;
 
-   box-shadow: 2px 2px 2px #000000;
+   box-shadow: .2em .2em .1em var(--colorShadow);
    
    color: var(--colorText);
    font-weight: var(--fw-3);
@@ -56,12 +60,41 @@
 
    position: relative;
    right: -.75em;
-   bottom: -.7em;
+   bottom: -.3em;
 
-   width: var(--fs-1);
-   height: calc(var(--fs-1) * 2);
+   width: var(--fs-2);
+   height: var(--fs-2);
    background-image: url('../images/buyIcon.svg');
    background-repeat: no-repeat;
    background-size: contain;
    background-position: 50% 50%;
+}
+
+/*720px*/
+@media screen and (min-width: 45em) {
+   .general-info{
+      padding-inline: 2.25%;
+   }
+}
+
+/*1024px*/
+@media screen and (min-width: 64em) {
+   .general-info{
+      display: flex;
+      align-items: center;
+      gap: 4.25vw;
+
+      padding-inline: 0;
+   }
+
+   .general-info > div{
+      width: 53%;
+      height: 26.4vw;
+      max-height: 60.1vh;
+      margin-bottom: 0;
+   }
+
+   .general-info > article{
+      width: 47%;
+   }
 }
