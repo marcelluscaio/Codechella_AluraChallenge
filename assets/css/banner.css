@@ -38,7 +38,7 @@
    text-align: center;
 
    animation-name: background-slide;
-   animation-duration: 25s;
+   animation-duration: 20s;
    animation-timing-function: linear;
    animation-iteration-count: infinite;
    animation-delay: 1s;
@@ -61,6 +61,11 @@
    .banner{
       background-size: 100%;
       background-position: left 50% top -15vw;
+   }
+
+   .banner--second{
+      background-size: cover;
+      background-position: center;
    }
 }
 

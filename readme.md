@@ -25,9 +25,13 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [X] General info tablet
 - [X] General info desktop
 - [X] Line-up Padding
-- [ ] Line-up font
+- [X] Line-up font
 - [X] Set Selection
 - [ ] Set scrollbar
+- [X] Banner footer
+- [ ] Footer padding
+- [ ] Footer font
+- [ ] Footer padding
 
 
 Project checklist
@@ -42,4 +46,9 @@ Section checklist
 - Font
 - Images
 
-
+Fontes em 1440
+64
+48
+40
+32
+20
