@@ -32,6 +32,14 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [ ] Footer padding
 - [ ] Footer font
 - [ ] Footer padding
+- [ ] Create animation for lineup
+- [ ] Detect lineu position to fire animation
+- [ ] Throttle scroll event
+- [ ] Unmount function after all has appeared
+
+Checar 
+BAnner no meu pc x dev tools
+background-position: left 50% top -45vw;
 
 
 Project checklist

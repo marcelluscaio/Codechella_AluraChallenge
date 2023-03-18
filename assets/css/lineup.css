@@ -75,6 +75,25 @@
    font-size: var(--fs-2);
 }
 
+.lineup li{
+   opacity: 0;
+
+   animation-duration: 1s;
+   animation-timing-function: ease-in;
+   animation-fill-mode: forwards;
+   animation-delay: var(--n);
+}
+
+.animate-lineup{
+   animation-name: test;
+}
+
+@keyframes test{
+   to{
+      opacity: 1;
+   }
+}
+
 /*720px*/
 @media screen and (min-width: 45em) {
    .lineup{
