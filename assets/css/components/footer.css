@@ -12,6 +12,14 @@ footer address > h3{
    text-align: center;
 }
 
+footer address > ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: var(--fs-5);
+}
+
+
 footer address li{
    font-size: var(--fs-5);
    width: 1em;

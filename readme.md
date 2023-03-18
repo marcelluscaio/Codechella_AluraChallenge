@@ -36,6 +36,7 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [ ] Detect lineu position to fire animation
 - [ ] Throttle scroll event
 - [ ] Unmount function after all has appeared
+- [ ] Set role to li in footer socials media?
 
 Checar 
 BAnner no meu pc x dev tools
