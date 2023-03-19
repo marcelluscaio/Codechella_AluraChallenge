@@ -33,4 +33,4 @@ const handleScroll = () => {
    arrayBandLists.forEach(band => checkPosition(band));
 }
 
-window.addEventListener('scroll', throttle(handleScroll, 1000));
+window.addEventListener('scroll', throttle(handleScroll, 500));

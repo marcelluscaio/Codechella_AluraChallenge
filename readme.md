@@ -37,6 +37,7 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [ ] Throttle scroll event
 - [ ] Unmount function after all has appeared
 - [ ] Set role to li in footer socials media?
+Make throttle get last action
 
 Checar 
 BAnner no meu pc x dev tools
