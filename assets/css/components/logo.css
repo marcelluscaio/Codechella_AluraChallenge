@@ -3,12 +3,3 @@ footer h2 img{
    width: min(65vw, 15rem + 3vw);
    margin-inline: auto;
 }
-
-
-
-/*720px*/
-/* @media screen and (min-width: 45em) {
-   header nav a > img{
-      margin-inline: auto;
-   }
-} */

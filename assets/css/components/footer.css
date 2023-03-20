@@ -1,15 +1,25 @@
 footer{
-   padding-block: var(--section-padding-block);
-
+   padding-top: var(--section-padding-block);
+   padding-bottom: calc(var(--fs-2) * 1.35);
    background-color: var(--colorMain);
+
+   text-align: center;
 }
 
-footer address > h3{
+footer h2,
+footer h3{
+   margin-bottom: calc(var(--fs-1) / 2);
+}
+
+footer address{
+   margin-bottom: calc(var(--fs-1) * 2.5);
+}
+
+footer address > h3{   
    font-family: var(--ff-raleway);
    font-weight: var(--fw-2);
    font-size: var(--fs-2);
    line-height: 2;
-   text-align: center;
 }
 
 footer address > ul{
@@ -62,3 +72,47 @@ footer address li:hover{
    background-position: 0 0;
 }
 
+footer p{
+   font-family: var(--ff-raleway);
+   font-weight: var(--fw-2);
+   font-size: var(--fs-1);
+   line-height: 1.75;
+}
+
+/*720px*/
+@media screen and (min-width: 45em) {
+   footer address{
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: calc(var(--fs-1) / 2);   
+   }
+
+   footer address > h3{
+      margin-bottom: 0;
+   }
+
+   footer address > ul{
+      gap: calc(var(--fs-1) / 2); 
+   }
+
+   footer address li{
+      font-size: calc(var(--fs-2) * 1.75);
+   }
+}
+
+/*1024px*/
+@media screen and (min-width: 64em) {
+   footer > .container > div:first-of-type{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-bottom: 10vh;
+   }
+
+   footer h2,
+   footer address{
+      margin-bottom: 0;
+   }
+}

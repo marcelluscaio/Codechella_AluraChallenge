@@ -28,9 +28,8 @@ const killEventListener = () => {
    window.removeEventListener('scroll', handleScroll);
 }
 
-const handleScroll = () => {   
-   console.log('alive');
+const handleScroll = () => {
    arrayBandLists.forEach(band => checkPosition(band));
-}
+};
 
 window.addEventListener('scroll', throttle(handleScroll, 500));
