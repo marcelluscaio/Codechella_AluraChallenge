@@ -5,7 +5,7 @@ const bandLists = document.querySelectorAll('.lineup > ul');
 const arrayBandLists = [...bandLists];
 
 const checkPosition = (list) => {
-   if(list.getBoundingClientRect().top < windowHeight * 2 / 3){
+   if(list.getBoundingClientRect().top < windowHeight * 0.9){
       triggerAnimation(list);
       cleanArray(list);
       arrayBandLists.length === 0 && killEventListener();
