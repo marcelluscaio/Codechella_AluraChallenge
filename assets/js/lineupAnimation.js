@@ -14,7 +14,7 @@ const checkPosition = (list) => {
 
 const triggerAnimation = (list) => {   
    for(let i=0; i<list.children.length; i++){
-      list.children[i].style.setProperty('--n', `${i * .75}s`);
+      list.children[i].style.setProperty('--n', `${(i + 0.5) * .5}s`);
       list.children[i].classList.add('animate-lineup');
    };
 };

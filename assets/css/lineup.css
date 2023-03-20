@@ -75,23 +75,36 @@
    font-size: var(--fs-2);
 }
 
+.lineup li:nth-child(odd){
+   --deg: 90deg;
+   --position: 100%;
+   --final-position: 0%;
+}
+
+.lineup li:nth-child(even){
+   --deg: 270deg;
+   --position: 0%;
+   --final-position: 100%;
+}
+
 .lineup li{
-   opacity: 0;
+   background: linear-gradient(var(--deg), white 50%, transparent 75%);
+   background-size: 400%;
+   background-position: var(--position);
+   background-repeat: no-repeat;
+   -webkit-background-clip: text;
+   background-clip: text;
+   
+   color: transparent;
 
-   animation-duration: 1s;
-   animation-timing-function: ease-in;
-   animation-fill-mode: forwards;
-   animation-delay: var(--n);
+   transition-property: background-position;
+   transition-duration: 1.25s;
+   transition-timing-function: ease-in;
+   transition-delay: var(--n);
 }
 
-.animate-lineup{
-   animation-name: test;
-}
-
-@keyframes test{
-   to{
-      opacity: 1;
-   }
+.lineup .animate-lineup{
+   background-position: var(--final-position);
 }
 
 /*720px*/

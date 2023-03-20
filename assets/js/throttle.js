@@ -1,4 +1,4 @@
-const throttle = (myFunction, timeout = 750) => {
+const throttle = (myFunction, timeout) => {
    let counter = 0;
    let wait = false;
    let waitingArguments;
