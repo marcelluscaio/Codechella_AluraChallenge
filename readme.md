@@ -17,9 +17,10 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [X] Style menu options
 - [X] Header on desktop
 - [X]  Make font better on 1440px
-- [ ] Adjust lineup distribution
+- [X] Adjust lineup distribution
 - [ ] Set scrollbar
 - [ ] Make burger animation
+https://www.youtube.com/watch?v=R00QiudbD4Y&ab_channel=KevinPowell
 - [ ] Make active link marking
 - [ ] Make animation when hovering links and when clicking
 - [X] General information section - Start
@@ -39,6 +40,7 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [X] Make throttle get last action
 - [X] Unmount function after all has appeared
 - [ ] Set role to li in footer socials media?
+
 
 
 Project checklist

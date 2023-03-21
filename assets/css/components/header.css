@@ -154,8 +154,30 @@ input:checked + label + .menu-options{
    }
 
    .menu-options{
+      --line-size: 0;
+      --line-position: 0;
+      --scale: 0;
+      
       gap: 1.6em;
 
       font-size: var(--fs-1);
    }
+  
+   .menu-options::after{
+      content: '';
+
+      position: absolute;
+      bottom: 0;
+      left: var(--line-position);
+      z-index: 1;
+
+      width: var(--line-size);
+      height: 2px;
+      background-color: var(--colorText);
+
+      transform: scaleX(var(--scale));
+      transform-origin: center;
+      transition: left .75s ease-in-out, width 1s ease-in-out, transform 1s ease-in-out;
+   }
+
 }

@@ -37,7 +37,7 @@
 
    position: relative;
    
-   padding: 0.34em;
+   padding: .35em .7em;
    margin-bottom: 1.5em;
    background-color: var(--colorSec);
    
