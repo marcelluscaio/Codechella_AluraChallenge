@@ -45,6 +45,29 @@ header label > div{
    width: 75%;
    height: 9%;
    background-color: var(--colorText);
+   
+   transform-origin: 0;
+   transition: transform 1s ease-in-out;
+}
+
+input + label > div:nth-child(2){
+   transform-origin: center;
+   transition: width 1s cubic-bezier(0, 2, 0.75, 1.5), transform 1s ease-in-out;
+}
+
+input:checked + label > div:first-child{
+   transform: scale(1.07) rotate(45deg);
+}
+
+input:checked + label > div:nth-child(2){
+   width: 0;
+   transform: rotate(360deg);
+   transform-origin: center;
+   transition: width .75s cubic-bezier(1,-2,1,3);
+}
+
+input:checked + label > div:last-child{
+   transform: scale(1.07) rotate(-45deg);
 }
 
 .menu-options{   

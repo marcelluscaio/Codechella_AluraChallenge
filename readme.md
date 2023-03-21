@@ -22,7 +22,7 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [ ] Make burger animation
 https://www.youtube.com/watch?v=R00QiudbD4Y&ab_channel=KevinPowell
 - [ ] Make active link marking
-- [ ] Make animation when hovering links and when clicking
+- [X] Make animation when hovering links
 - [X] General information section - Start
 - [X] General info mobile
 - [X] General info tablet
