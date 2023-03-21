@@ -45,6 +45,7 @@ header label > div{
    width: 75%;
    height: 9%;
    background-color: var(--colorText);
+   border-radius: 1rem;
    
    transform-origin: 0;
    transition: transform 1s ease-in-out;
@@ -56,7 +57,7 @@ input + label > div:nth-child(2){
 }
 
 input:checked + label > div:first-child{
-   transform: scale(1.07) rotate(45deg);
+   transform: scale(1.05) rotate(45deg);
 }
 
 input:checked + label > div:nth-child(2){
@@ -67,7 +68,7 @@ input:checked + label > div:nth-child(2){
 }
 
 input:checked + label > div:last-child{
-   transform: scale(1.07) rotate(-45deg);
+   transform: scale(1.05) rotate(-45deg);
 }
 
 .menu-options{   

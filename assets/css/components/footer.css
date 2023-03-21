@@ -72,6 +72,12 @@ footer address li:hover{
    background-position: 0 0;
 }
 
+footer address li > a{
+   display: inline-block;
+   width: 100%;
+   height: 100%;
+}
+
 footer p{
    font-family: var(--ff-raleway);
    font-weight: var(--fw-2);

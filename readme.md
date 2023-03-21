@@ -20,7 +20,6 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [X] Adjust lineup distribution
 - [ ] Set scrollbar
 - [X] Make burger animation
-https://www.youtube.com/watch?v=R00QiudbD4Y&ab_channel=KevinPowell
 - [ ] Make active link marking
 - [X] Make animation when hovering links
 - [X] General information section - Start
