@@ -109,26 +109,6 @@
       --line-width: calc(50vw - 50% - 1em - 8.5vw);
    }
 
-   .lineup > ul{
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      flex-wrap: wrap;
-      gap: var(--fs-2);   
-   }
-
-   .lineup > ul:first-of-type{
-      margin-bottom: calc(var(--fs-4) * 2);
-   }
-
-   .lineup li{
-      margin-bottom: 0;
-   }
-
-   .lineup li:first-child{
-      width: 100%;
-   }
-
    .lineup > h3::before,
    .lineup > h3::after{
       content: '';
@@ -151,11 +131,40 @@
    .lineup > h3::after{
       right: calc((-1 * var(--line-width)) - 1em);
    }
+
+   .lineup > ul{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      --gap: var(--fs-2);
+      gap: var(--gap);   
+   }
+
+   .lineup > ul:first-of-type{
+      margin-bottom: calc(var(--fs-4) * 2);
+   }
+
+   .lineup li{
+      margin-bottom: 0;
+   }
+
+   .lineup li:first-child{
+      width: 100%;
+   }
+
+   .lineup li:nth-child(n + 2):nth-child(-n + 9):nth-child(4n +1){
+      width: 100%;
+   }
 }
 
 /*1024px*/
 @media screen and (min-width: 64em) {
-   .lineup li:nth-child(n + 2):nth-child(-n + 5){
-      min-width: 22%;
+   .lineup li:nth-child(n + 2):nth-child(-n + 9):nth-child(4n +1){
+      width: auto;
+   }
+   
+   .lineup li:nth-child(n + 2):nth-child(-n + 9){
+      min-width: calc(22% - var(--gap));
    }
 }

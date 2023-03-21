@@ -17,31 +17,28 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [X] Style menu options
 - [X] Header on desktop
 - [X]  Make font better on 1440px
+- [ ] Adjust lineup distribution
+- [ ] Set scrollbar
 - [ ] Make burger animation
 - [ ] Make active link marking
 - [ ] Make animation when hovering links and when clicking
-- [ ] General information section - Start
+- [X] General information section - Start
 - [X] General info mobile
 - [X] General info tablet
 - [X] General info desktop
 - [X] Line-up Padding
 - [X] Line-up font
 - [X] Set Selection
-- [ ] Set scrollbar
 - [X] Banner footer
-- [ ] Footer padding
-- [ ] Footer font
-- [ ] Footer padding
-- [ ] Create animation for lineup
-- [ ] Detect lineu position to fire animation
-- [ ] Throttle scroll event
-- [ ] Unmount function after all has appeared
+- [X] Footer padding
+- [X] Footer font
+- [X] Footer padding
+- [X] Create animation for lineup
+- [X] Detect lineup position to fire animation
+- [X] Throttle scroll event
+- [X] Make throttle get last action
+- [X] Unmount function after all has appeared
 - [ ] Set role to li in footer socials media?
-Make throttle get last action
-
-Checar 
-BAnner no meu pc x dev tools
-background-position: left 50% top -45vw;
 
 
 Project checklist
@@ -62,3 +59,43 @@ Fontes em 1440
 40
 32
 20
+
+Ver os nth child
+/* 
+   .lineup li:nth-child(n + 2):nth-child(-n + 9){
+      min-width: calc(50% - (var(--gap) / 2));
+   }
+
+   .lineup li:nth-child(n + 2):nth-child(-n + 9):nth-child(2n - 1){
+      text-align: left;
+   }
+
+   .lineup li:nth-child(n + 2):nth-child(-n + 9):nth-child(2n){
+      text-align: right;
+   }
+
+   .lineup li:nth-child(n + 2):nth-child(-n + 9):nth-child(4n + 2),
+   .lineup li:nth-child(n + 2):nth-child(-n + 9):nth-child(4n + 3){
+      transform: translateX(-.25em);
+   }
+
+   .lineup li:nth-child(n + 2):nth-child(-n + 9):nth-child(4n),
+   .lineup li:nth-child(n + 2):nth-child(-n + 9):nth-child(4n + 1){
+      transform: translateX(.25em);
+   } */
+/* 
+   .lineup li:nth-child(n + 2):nth-child(-n + 5):nth-child(2n){
+      min-width: calc(50% - (var(--gap) / 2));
+   }
+
+   .lineup li:nth-child(n + 2):nth-child(-n + 5):nth-child(2n - 1){
+      min-width: calc(50% - (var(--gap) / 2));
+   }
+
+   .lineup li:nth-child(n + 6):nth-child(-n + 9):nth-child(2n){
+      min-width: calc(50% - (var(--gap) / 2));
+   }
+
+   .lineup li:nth-child(n + 6):nth-child(-n + 9):nth-child(2n - 1){
+      min-width: calc(50% - (var(--gap) / 2));
+   } */
