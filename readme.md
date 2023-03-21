@@ -19,7 +19,7 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [X]  Make font better on 1440px
 - [X] Adjust lineup distribution
 - [ ] Set scrollbar
-- [ ] Make burger animation
+- [X] Make burger animation
 https://www.youtube.com/watch?v=R00QiudbD4Y&ab_channel=KevinPowell
 - [ ] Make active link marking
 - [X] Make animation when hovering links
