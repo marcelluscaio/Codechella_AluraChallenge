@@ -22,6 +22,17 @@
    mix-blend-mode: hard-light;
 }
 
+.banner--experiencia{
+   background-image: url('../images/experiencia.webp');
+   background-attachment: unset;
+   background-size: cover;
+   background-position: center;
+}
+
+.banner--setores{
+   background-image: url('../images/imageBoreal.webp');
+}
+
 .banner > h1{
    width: 100%;
    background-image: var(--gradient-2);
@@ -64,6 +75,11 @@
    }
 
    .banner--second{
+      background-size: cover;
+      background-position: center;
+   }
+
+   .banner--experiencia{
       background-size: cover;
       background-position: center;
    }
