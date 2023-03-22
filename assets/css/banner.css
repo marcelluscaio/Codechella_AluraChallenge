@@ -23,10 +23,29 @@
 }
 
 .banner--experiencia{
-   background-image: url('../images/experiencia.webp');
+   position: relative;
+   
+   background-image: none;
+
+   isolation: isolate; 
+   /*This is important to create a new stacking context. h1 is z-index 1, as the header. Isolate makes its z-index z-index 1 inside its parent z-index 0, thus behind anything that comes from the header*/
+}
+
+.banner--experiencia::after{
+   content: '';
+
+   position: absolute;
+   z-index: 0;
+   
+   width: 100%;
+   height: 100%;   
+   background-image: url('../images/experiencia.webp'), radial-gradient(rgba(0,0,0,0.75) 60% , rgba(0,0,0,0.25) 180%);
    background-attachment: unset;
    background-size: cover;
    background-position: center;
+   background-blend-mode: multiply;
+
+   opacity: .75;
 }
 
 .banner--setores{
@@ -61,6 +80,10 @@
    }
 }
 
+.banner--experiencia > h1{
+   z-index: 1;
+}
+
 .banner > h1 > span{
    display: block;
 
@@ -79,9 +102,9 @@
       background-position: center;
    }
 
-   .banner--experiencia{
+   .banner--experiencia::after{
       background-size: cover;
-      background-position: center;
+      background-position: top;
    }
 }
 
@@ -108,5 +131,9 @@
       max-height: 59.3vh;
       
       background-position: left 50% bottom 60%;
+   }
+
+   .banner--experiencia::after{
+      background-position: top;
    }
 }

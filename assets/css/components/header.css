@@ -1,5 +1,6 @@
 header{
    position: relative;
+   z-index: 1; /*This is important when the element below the header has position relative in order for it not to cover the sliding menu */
    
    --padding-header: calc(var(--fs-1) * 2);
    padding-block: var(--padding-header);

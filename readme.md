@@ -40,6 +40,12 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [X] Unmount function after all has appeared
 - [ ] Set role to li in footer socials media?
 
+page experiencia
+- [X] Banner on mobile
+- [ ] Filter on banner
+- [X] Tablet
+- [X] Desktop
+
 
 
 Project checklist
