@@ -125,6 +125,22 @@ input:checked + label > div:last-child{
    text-decoration: none;
 }
 
+.menu-options a.active{
+   font-size: var(--fs-2);
+   
+   animation-name: blink;
+   animation-duration: 3s;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+@keyframes blink {
+   100%{
+      filter:opacity(.5);
+   }   
+}
+
 input:checked + label + .menu-options{
    top: 100%;
 
