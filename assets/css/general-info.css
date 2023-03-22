@@ -2,7 +2,8 @@
    padding-block: var(--section-padding-block);
 }
 
-.general-info > div{
+.general-info > div,
+.general-info--experiencia > div > div{
    height: 105.6vw;
    max-height: 85vh;
    background-image: url('../images/musicians.webp');
@@ -13,12 +14,37 @@
    margin-bottom: var(--section-padding-block);
 }
 
-.general-info > article{
+.general-info--experiencia > div:nth-of-type(1) > div{
+   background-image: url('../images/experiencia1.webp');
+}
+
+.general-info--experiencia > div:nth-of-type(2) > div{
+   background-image: url('../images/experiencia2.webp');
+}
+
+.general-info--experiencia > div:nth-of-type(3) > div{
+   background-image: url('../images/experiencia3.webp');
+}
+
+.general-info--experiencia > div{
+   height: unset;
+   max-height: unset;
+   background-image: unset;
+   background-size: unset;
+   background-position: unset;
+   background-repeat: unset;
+   border-radius: unset;
+   margin-bottom: calc(var(--section-padding-block) * 1.75);
+}
+
+.general-info > article,
+.general-info--experiencia > div > article{
    font-family: var(--ff-raleway);
    text-align: center;
 }
 
-.general-info > article > h2{
+.general-info > article > h2,
+.general-info--experiencia > div > article > h2{
    margin-bottom: .75em;
 
    font-weight: var(--fw-3);
@@ -30,12 +56,17 @@
    display: block;
 }
 
-.general-info > article > p{
+.general-info > article > p,
+.general-info--experiencia > div > article > p{
    margin-bottom: 0.92em;
    
    font-weight: var(--fw-2);
    font-size: var(--fs-1);
    line-height: 2;
+}
+
+.general-info--experiencia > div > article > p{
+   margin-bottom: 0;
 }
 
 .general-info > article > a{
@@ -88,7 +119,7 @@
       gap: 4.25vw;
 
       padding-inline: 0;
-   }
+   }   
 
    .general-info > div{
       width: 53%;
@@ -106,4 +137,36 @@
       max-width: unset;
       min-width: 15em;
    }
+
+   .general-info--experiencia{
+      display: block;
+   }
+
+   .general-info--experiencia > div{
+      display: flex;
+      align-items: center;
+      gap: 3.4vw;
+      
+      width: unset;
+      height: unset;
+      max-height: unset;
+      margin-bottom: calc(var(--section-padding-block) * 2.5);
+   }
+
+   .general-info--experiencia > div:nth-child(2n){
+      flex-direction: row-reverse;   
+   }
+
+   .general-info--experiencia > div > div{
+      width: 50%;
+      height: unset;
+      aspect-ratio: 1.59;
+      padding-top: 33%; /*Fallback for spect ratio*/
+      margin-bottom: 0;      
+      border-radius: 1.5vw;
+   }
+
+   .general-info--experiencia > div > article{
+      width: 50%;      
+   }   
 }

@@ -42,9 +42,10 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 
 page experiencia
 - [X] Banner on mobile
-- [ ] Filter on banner
+- [X] Filter on banner
 - [X] Tablet
 - [X] Desktop
+- [ ] General info section
 
 
 
@@ -66,6 +67,9 @@ Fontes em 1440
 40
 32
 20
+
+
+
 
 Ver os nth child
 /* 
@@ -106,3 +110,10 @@ Ver os nth child
    .lineup li:nth-child(n + 6):nth-child(-n + 9):nth-child(2n - 1){
       min-width: calc(50% - (var(--gap) / 2));
    } */
+
+
+   Highlight:
+   - A experiência - Banner:
+   Criei o efeito degradê colocando o bg como pseudoelemento e aplicando opacidade nele. 
+   Precisei ajustar z-index e a interação dele com o header.
+   Apliquei z-index no header, e isolation na section, bem como z-index no h1
