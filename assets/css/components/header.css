@@ -125,19 +125,26 @@ input:checked + label > div:last-child{
    text-decoration: none;
 }
 
-.menu-options a.active{
-   font-size: var(--fs-2);
+.menu-options a.active{   
+   display: inline-block;
+   will-change: transform;
    
    animation-name: blink;
    animation-duration: 3s;
-   animation-timing-function: ease-in-out;
+   animation-timing-function: linear;
    animation-iteration-count: infinite;
    animation-direction: alternate;
 }
 
 @keyframes blink {
-   100%{
+   50%{
       filter:opacity(.5);
+      transform: translateY(8%);
+   }
+
+   100%{
+      filter:opacity(.75);
+      transform: translateY(-8%);
    }   
 }
 
