@@ -1,0 +1,8 @@
+.setores-mapa{
+   font-family: var(--ff-raleway);
+}
+
+.seletores-mapa svg{
+   width: 100%;
+   aspect-ratio: 1;
+}

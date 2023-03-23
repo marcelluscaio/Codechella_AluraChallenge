@@ -47,6 +47,10 @@ page experiencia
 - [X] Desktop
 - [ ] General info section
 
+page setores
+- [X] Banner
+- [X] Banner responsivity
+- [ ] Create cards
 
 
 

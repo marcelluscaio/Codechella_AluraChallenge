@@ -52,6 +52,10 @@
    line-height: 1.2;
 }
 
+.general-info--experiencia > div > article > h2{
+   margin-bottom: .25em;
+}
+
 .general-info > article > h2 > span{
    display: block;
 }
@@ -126,10 +130,14 @@
       height: 26.4vw;
       max-height: 60.1vh;
       margin-bottom: 0;
-   }
+   }   
 
    .general-info > article{
       width: 47%;
+   }
+
+   .general-info--experiencia > div > article > h2{
+      margin-bottom: .75em;
    }
 
    .general-info > article > a{
