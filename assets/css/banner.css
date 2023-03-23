@@ -22,9 +22,10 @@
    mix-blend-mode: hard-light;
 }
 
-.banner--experiencia{
+.banner--experiencia,
+.banner--setores{
    position: relative;
-   
+
    background-image: none;
 
    isolation: isolate; 
@@ -39,17 +40,26 @@
    
    width: 100%;
    height: 100%;   
-   background-image: url('../images/experiencia.webp'), radial-gradient(rgba(0,0,0,0.75) 60% , rgba(0,0,0,0.25) 180%);
-   background-attachment: unset;
+   background-image: url('../images/experiencia.webp'),  conic-gradient(from 215deg at 15% 85%, #000000 -25%, #ffffff 200%);
    background-size: cover;
    background-position: center;
    background-blend-mode: multiply;
-
-   opacity: .75;
 }
 
-.banner--setores{
-   background-image: url('../images/imageBoreal.webp');
+.banner--setores::after{
+   content: '';
+
+   position: absolute;
+   z-index: 0;
+   
+   width: 100%;
+   height: 100%;   
+   background-image: url(../images/setores-banner.webp), var(--gradient-1);
+   background-size: 275%;
+   background-position: left 85% top -35vh, 100%;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-blend-mode: multiply;
 }
 
 .banner > h1{
@@ -80,7 +90,8 @@
    }
 }
 
-.banner--experiencia > h1{
+.banner--experiencia > h1,
+.banner--setores > h1{
    z-index: 1;
 }
 
@@ -95,7 +106,7 @@
    .banner{
       background-size: 100%;
       background-position: left 50% top -15vw;
-   }
+   }   
 
    .banner--second{
       background-size: cover;
@@ -105,6 +116,10 @@
    .banner--experiencia::after{
       background-size: cover;
       background-position: top;
+   }
+
+   .banner--setores::after{
+      background-size: 200%;
    }
 }
 
@@ -135,5 +150,10 @@
 
    .banner--experiencia::after{
       background-position: top;
+   }
+
+   .banner--setores::after{
+      background-size: 150%;
+      background-position: left 70% bottom 0, 100%;
    }
 }

@@ -50,13 +50,18 @@ page experiencia
 
 
 
-- 23
+- 23 (quinta)
+Fazer a parte de setores
 
-- 24
+- 24 (sexta)
+Informações gerais (acordeon)
 
-- 25
+- 25 (sabado)
+Garanta seu ingresso
+(Fazer label flutuante)
 
-- 26
+- 26 (domingo)
+Uhul seu ingresso está aqui
 Fechar
 
 - 27
