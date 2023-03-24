@@ -68,11 +68,31 @@
 
    .setores-detalhes > div > article{
       width: 100%;
+      margin-bottom: calc((100% - 3.4vw) / 12); /*Margin bottom is according to parent element width. Here I take 100% from the div, subtract the gaps and divide by three, then by four, because I want it to be a quarter of the article*/
+   }
+
+   .setores-detalhes > div > article:nth-child(2){
+      align-self: flex-end;
+
+      margin-bottom: 0;   
    }
 
    .setores-detalhes article > div{
       width: 100%;
       padding-top: 65%;
    }
+
+   .setores-detalhes > div > article > p{
+      margin-bottom: 0;
+   }
+
+   /*
+   
+   Usar grid no lineup
+   3
+   4
+   3
+   5
+   */
 }
 
