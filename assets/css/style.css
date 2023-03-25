@@ -32,7 +32,6 @@
    --fs-4: clamp(1.62rem, calc(1.34rem + 1.38vw), 3.55rem);/*25.92px a 58.65px*/
    --fs-5: clamp(1.94rem, calc(1.54rem + 1.99vw), 4.74rem);/*31.1px a 75.78px*/
 
-
    --container-width: 86.5%;
 
    --section-padding-block: calc(var(--fs-2) * 1.93);

@@ -27,6 +27,11 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [X] General info tablet
 - [X] General info desktop
 - [X] Line-up Padding
+ -[ ] Usar grid no lineup
+   3
+   4
+   3
+   5
 - [X] Line-up font
 - [X] Set Selection
 - [X] Banner footer
