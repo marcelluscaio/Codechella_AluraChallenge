@@ -6,6 +6,13 @@
 
    --colorShadow: #444444;
 
+   --color-sector-1: #0E7DF1;
+   --color-sector-2: #FE016E;
+   --color-sector-3: #01A89E;
+   --color-sector-4: #3F51B5;
+   --color-sector-5: #104489;
+
+
    --gradient-1: linear-gradient(#304968, #36C1A0 50% 70%, #4650BD);
    --gradient-2: linear-gradient(160deg, #ffffff 20%, #4650BD, #36C1A0, #304968, #ffffff 80%);
    --gradient-3: linear-gradient(135deg,  #4650BD, #36C1A0, #304968 50%, #ffffff 50%);
@@ -56,6 +63,7 @@ body{
    color: var(--colorText);
 }
 
+/*720px*/
 @media screen and (min-width: 45em) {
    :root{
       --container-width: 84%;

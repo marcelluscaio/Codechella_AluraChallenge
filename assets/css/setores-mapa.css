@@ -1,8 +1,96 @@
 .setores-mapa{
    font-family: var(--ff-raleway);
+
+   --caption-spacing: calc(var(--fs-3) * 1.1);
 }
 
-.seletores-mapa svg{
+.setores-mapa svg{
    width: 100%;
    aspect-ratio: 1;
+   margin-bottom: calc(var(--fs-3) * 1.75);
+}
+
+.setores-mapa > div > h2{
+   margin-bottom: var(--caption-spacing);
+   
+   font-weight: var(--fw-3);
+   font-size: var(--fs-3);
+   line-height: 2;
+}
+
+.setores-mapa li{
+   position: relative;;
+   
+   margin-bottom: var(--caption-spacing);
+   --square-size: 1.6em;
+   padding-left: calc(var(--square-size) + .75em);
+   
+   font-weight: var(--fw-2);
+   font-size: var(--fs-2);
+   line-height: 2;
+}
+
+.setores-mapa li:last-child{
+   margin-bottom: 0;
+}
+
+.setores-mapa li::before{
+   content: '';
+
+   display: inline-block;
+
+   position: absolute;
+   top: calc((2em - var(--square-size)) / 2);
+   /* 2em is the line-height. I want it to be in the middle, so this is line height, minus square size divided by two.
+   Created this when trying to use position relative, but the pseudo element changed the line-height. In position absolute this could be achieved using top 50% and transform Y */
+   left: 0;
+
+   
+   width: var(--square-size);
+   height: var(--square-size);
+}
+
+.setores-mapa li:nth-child(1)::before{
+   background-color: var(--color-sector-1);
+}
+
+.setores-mapa li:nth-child(2)::before{
+   background-color: var(--color-sector-2);
+}
+
+.setores-mapa li:nth-child(3)::before{
+   background-color: var(--color-sector-3);
+}
+
+.setores-mapa li:nth-child(4)::before{
+   background-color: var(--color-sector-4);
+}
+
+.setores-mapa li:nth-child(5)::before{
+   background-image: url('../images/rampa.svg');
+   background-color: var(--color-sector-5);
+}
+
+/*720px*/
+@media screen and (min-width: 45em) {
+   .setores-mapa > .setores-mapa__caption{
+      width: 40%;
+      margin-inline: auto;
+   }
+}
+
+/*1024px*/
+@media screen and (min-width: 64em) {
+   .setores-mapa{
+      display: flex;
+      gap: 3.5vw;
+   }
+
+   .setores-mapa svg{
+      width: 57.5%;
+   }
+   .setores-mapa > .setores-mapa__caption{
+      width: 42.5%;
+   }
+
 }

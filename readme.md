@@ -55,7 +55,14 @@ page experiencia
 page setores
 - [X] Banner
 - [X] Banner responsivity
-- [ ] Create cards
+- [X] Create cards
+- [ ] Enhance color-scheme at mapa - Change color in legenda and change svg accordingly
+
+- [ ] Normalizar margens
+- [ ] Fazer navegação de tab nas redes sociais footer
+- [ ] Fazer select no footer
+- [ ] Padding top seção mapa de setores (Legenda desce)
+- [ ] Acertar borderradius das fotos cards mapa setores (tablet talvez e desktop com certeza)
 
 
 
