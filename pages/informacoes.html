@@ -14,10 +14,7 @@
    <link rel="stylesheet" href="../assets/css/components/footer.css">
    <link rel="stylesheet" href="../assets/css/components/logo.css">
    <link rel="stylesheet" href="../assets/css/banner.css">
-   <link rel="stylesheet" href="../assets/css/general-info.css">
-   <link rel="stylesheet" href="../assets/css/lineup.css">
-   <script src="../assets/js/throttle.js" type="module" defer></script>
-   <script src="../assets/js/lineupAnimation.js" type="module" defer></script>
+   <link rel="stylesheet" href="../assets/css/accordion.css">
    <script src="../assets/js/headerLineAnimation.js" type="module" defer></script>
    <title>CodeChella</title>
 </head>
@@ -46,7 +43,7 @@
                         <a href="../pages/setores.html">Mapa de Setores</a>
                      </li>
                      <li>
-                        <a href="#">Informações</a>
+                        <a href="#" class="active">Informações</a>
                      </li>
                      <li>
                         <a href="../pages/ingressos.html">Ingresso</a>
@@ -58,59 +55,42 @@
       </nav>   
    </header>
    <section class="banner">
-      <h1><span>Boas-vindas ao</span>#CodeChella2023!</h1>
+      <h1>Informações gerais</h1>
    </section>
-   <section class="general-info container">
-      <div></div>
-      <article>
-         <h2>&lt;11 e 12 de Março&gt;<span>Aluródromo de São Paulo</span></h2>
-         <p>Hora de programar nossa memória com novas lembranças! Uma nova experiência sobre música, linguagens e, claro, tecnologia! Somos um festival diverso, com vários artistas e referências. Divirta-se!</p>
-         <a href="#" role="button">Comprar ingresso</a>
-      </article>
-   </section>
-   <section class="lineup container">
-      <h2>Line-Up</h2>
-      <h3>Sábado &lt;11/03&gt;</h3>
+   <section class="accordion container">
+      <h2>Perguntas frequentes:</h2>
       <ul>
-         <li>Planet REMp</li>
-         <li>Pablo Vuettar</li>
-         <li>Plebe Ruby</li>
-         <li>System of a DOM</li>
-         <li>Python Maiden</li>
-         <li>Apollo Client 2001</li>
-         <li>Bon Java</li>
-         <li>NickCallback</li>
-         <li>Linkin Promises</li>
-         <li>Fullstack Fighters</li>
-         <li>Papa React</li>
-         <li>Angular in Chains</li>
-         <li>Agnostic Front-end</li>
-         <li>SlipkNode</li>
-         <li>Pink Flutter</li>
-         <li>Kiss</li>
+         <li>
+            <button>Quais são os itens proibidos?</button>
+            <div>
+               <p>Pessoas portando bugs, código sujo e com excesso de '!important' não poderão entrar sob hipótese alguma. Bootstrap é permitido, mas não encorajamos.</p>
+            </div>
+         </li>
+         <li>
+            <button>Quais itens eu não posso esquecer?</button>
+            <div>
+               <p>Para codar no Caio-Chella é importante você trazer curiosidade, perseverança, água e uma toalha. Nunca esqueça a sua toalha.</p>
+            </div>
+         </li>
+         <li>
+            <button>Quais serão as atrações?</button>
+            <div>
+               <p>Teremos dois dias de shows, o primeiro (11/03) com bandas de front, e o segundo (12/03) com bandas de back. <a href="../index.html">Confira o line-up em detalhes!</a></p>
+            </div>
+         </li>         
+         <li>
+            <button>Qual é a classificação etária?</button>
+            <div>
+               <p>A classificação etária é 18 anos, mas maiores de 14 anos podem entrar acompanhados dos pais.</p>
+            </div>
+         </li>
+         <li>
+            <button>Quais são os setores disponíveis?</button>
+            <div>
+               <p>Temos a Pista Premium, Pista Comum, e Cadeiras. Confira todos os detalhes no nosso <a href="setores.html">Mapa de Setores</a></p>
+            </div>
+         </li>
       </ul>
-      <h3>Domingo &lt;12/03&gt;</h3>
-      <ul>
-         <li>NightSwift</li>
-         <li>Pxies</li>
-         <li>N'Async</li> 
-         <li>Lana Del Ploy</li>
-         <li>Dua Lib</li>
-         <li>The Backnd</li>
-         <li>CSS Styles</li>
-         <li>ArrayAna Grande</li>
-         <li>DJ Query</li>
-         <li>Miley Cypress</li>
-         <li>The Bootstrap Boys</li>
-         <li>Json Derulo</li>
-         <li>CloudPlay</li>
-         <li>Dev Lovato</li>
-         <li>Kylie MiLOG</li>
-         <li>Jenkins Brothers</li>
-         <li>Rubycat Dolls</li>         
-      </ul>
-   </section>
-   <section class="banner banner--second">
    </section>
    <footer>
       <div class="container">

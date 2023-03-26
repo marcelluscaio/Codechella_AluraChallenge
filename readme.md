@@ -58,7 +58,7 @@ page setores
 - [X] Create cards
 - [ ] Enhance color-scheme at mapa - Change color in legenda and change svg accordingly
 
-- [ ] Normalizar margens
+- [ ] Normalizar margens (dentrod e um elemento tem que ser todas iguais)
 - [ ] Fazer navegação de tab nas redes sociais footer
 - [ ] Fazer select no footer
 - [X] Padding top seção mapa de setores (Legenda desce)

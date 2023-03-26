@@ -1,0 +1,59 @@
+.accordion{
+   padding-block: var(--section-padding-block);
+}
+
+.accordion > h2{
+   margin-bottom: 1.5em;
+   
+   font-family: var(--ff-calistoga);
+   font-weight: var(--fw-1);
+   font-size: var(--fs-4);
+   line-height: 1.3;
+   text-align: center;
+}
+
+.accordion button{
+   width: 100%;
+   padding: .5em;
+   background-color: var(--colorMain);
+   border: none;
+   outline: transparent;
+
+   color: var(--colorText);
+   font-family: var(--ff-raleway);
+   font-weight: var(--fw-3);
+   font-size: var(--fs-3);
+   line-height: 1.17;
+   text-align: left;
+}
+
+.accordion p{
+   position: relative;
+
+   padding: .8em;
+
+   color: var(--colorText);
+   font-family: var(--ff-raleway);
+   font-weight: var(--fw-2);
+   font-size: var(--fs-2);
+   line-height: 2;
+   text-align: left;
+}
+
+.accordion p::before{
+   content: '';
+
+   position: absolute;
+   inset: 0;
+   z-index: -1;
+
+   background-color: var(--colorMain);
+
+   opacity: .25;
+}
+
+.accordion a{
+   font-weight: var(--fw-4);
+   color: var(--colorText);
+   text-decoration: none;
+}
