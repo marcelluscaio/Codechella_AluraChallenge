@@ -61,8 +61,13 @@ page setores
 - [ ] Normalizar margens
 - [ ] Fazer navegação de tab nas redes sociais footer
 - [ ] Fazer select no footer
-- [ ] Padding top seção mapa de setores (Legenda desce)
-- [ ] Acertar borderradius das fotos cards mapa setores (tablet talvez e desktop com certeza)
+- [X] Padding top seção mapa de setores (Legenda desce)
+- [X] Acertar borderradius das fotos cards mapa setores (tablet talvez e desktop com certeza)
+- [ ] Acertar o svg e fazer seleção ligada à legenda
+
+- [ ] Fazer readme
+
+
 
 
 

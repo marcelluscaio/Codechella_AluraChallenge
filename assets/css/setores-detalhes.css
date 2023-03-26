@@ -51,11 +51,13 @@
    line-height: 2;
 }
 
+/*720px*/
 @media screen and (min-width: 45em) {
    .setores-detalhes article > div{
       width: 60%;
       padding-top: calc(76.7% * .6);
       margin-inline: auto;
+      border-radius: 2.7vw; /* 60% of the original*/
    }
 }
 
@@ -81,6 +83,8 @@
    .setores-detalhes article > div{
       width: 100%;
       padding-top: 65%;
+      border-radius: 1.44vw;
+      /*For the border-radius I calculated the image's width: 100% - gap (~ 3.4%) / 3. I then applied the rule of three with 4.5vw -> 100% and 32% -> 1.44vw  */
    }
 
    .setores-detalhes > div > article > p{
