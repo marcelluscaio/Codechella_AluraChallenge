@@ -1,4 +1,6 @@
 .setores-mapa{
+   padding-top: calc(var(--section-padding-block) / 2);
+
    font-family: var(--ff-raleway);
 
    --caption-spacing: calc(var(--fs-3) * 1.1);
@@ -73,6 +75,10 @@
 
 /*720px*/
 @media screen and (min-width: 45em) {
+   .setores-mapa{
+      padding-block: var(--section-padding-block);
+   }
+   
    .setores-mapa > .setores-mapa__caption{
       width: 40%;
       margin-inline: auto;
@@ -83,11 +89,13 @@
 @media screen and (min-width: 64em) {
    .setores-mapa{
       display: flex;
+      align-items: center;
       gap: 3.5vw;
    }
 
    .setores-mapa svg{
       width: 57.5%;
+      margin-bottom: 0;
    }
    .setores-mapa > .setores-mapa__caption{
       width: 42.5%;
