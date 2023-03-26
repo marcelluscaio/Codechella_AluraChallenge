@@ -151,6 +151,8 @@ Ver os nth child
       min-width: calc(50% - (var(--gap) / 2));
    } */
 
+   Accordio transition? using max-height (cant use percentage)
+
 
    Highlight:
    - A experiência - Banner:

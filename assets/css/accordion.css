@@ -27,6 +27,21 @@
    text-align: left;
 }
 
+.accordion li > div{
+   max-height: 0;
+
+   overflow: hidden;
+
+   transition: max-height .25s ease-out;
+}
+
+.accordion li > div.show-content{
+   max-height: 100vh;
+
+   
+   transition: max-height .5s ease-in;
+}
+
 .accordion p{
    position: relative;
 
