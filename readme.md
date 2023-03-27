@@ -20,7 +20,7 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [X] Adjust lineup distribution
 - [ ] Set scrollbar
 - [X] Make burger animation
-- [ ] Make active link marking
+- [X] Make active link marking
 - [X] Make animation when hovering links
 - [X] General information section - Start
 - [X] General info mobile
@@ -50,7 +50,7 @@ page experiencia
 - [X] Filter on banner
 - [X] Tablet
 - [X] Desktop
-- [ ] General info section
+- [X] General info section
 
 page setores
 - [X] Banner
@@ -58,7 +58,7 @@ page setores
 - [X] Create cards
 - [ ] Enhance color-scheme at mapa - Change color in legenda and change svg accordingly
 
-- [ ] Normalizar margens (dentrod e um elemento tem que ser todas iguais)
+- [ ] Normalizar margens (dentro de um elemento tem que ser todas iguais)
 - [ ] Fazer navegação de tab nas redes sociais footer
 - [ ] Fazer select no footer
 - [X] Padding top seção mapa de setores (Legenda desce)

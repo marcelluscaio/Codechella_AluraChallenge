@@ -29,6 +29,14 @@
    cursor: pointer;
 }
 
+.accordion button:hover{
+   filter: brightness(.75);
+}
+
+.accordion button:focus-visible{
+   filter: brightness(.75);
+}
+
 .accordion li > div{
    max-height: 0;
 
