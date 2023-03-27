@@ -25,6 +25,8 @@
    font-size: var(--fs-3);
    line-height: 1.17;
    text-align: left;
+
+   cursor: pointer;
 }
 
 .accordion li > div{
@@ -32,14 +34,17 @@
 
    overflow: hidden;
 
-   transition: max-height .25s ease-out;
+   transition: max-height 1s cubic-bezier(0, 1, 0, 1);
 }
+/*There was a delay in the return. The max-height being too big makes a difference when we start seeing the animation
+https://stackoverflow.com/questions/18087098/how-to-remove-delay-on-css3-slide-out-transition-which-uses-max-height-transitio
+It's because you're animating between 0 and 1000px max height but your content is only about 120px high. The delay is the animation happening on the 880 pixels that you can't see.
+*/
 
 .accordion li > div.show-content{
    max-height: 100vh;
 
-   
-   transition: max-height .5s ease-in;
+   transition: max-height 2s linear;
 }
 
 .accordion p{
@@ -64,11 +69,19 @@
 
    background-color: var(--colorMain);
 
-   opacity: .25;
+   opacity: .5;
 }
 
 .accordion a{
    font-weight: var(--fw-4);
    color: var(--colorText);
    text-decoration: none;
+}
+
+/*1024px*/
+@media screen and (min-width: 64em) {
+   .accordion ul{
+      width: 80%;
+      margin-inline: auto;
+   }
 }

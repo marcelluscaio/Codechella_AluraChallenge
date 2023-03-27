@@ -65,6 +65,15 @@ page setores
 - [X] Acertar borderradius das fotos cards mapa setores (tablet talvez e desktop com certeza)
 - [ ] Acertar o svg e fazer seleção ligada à legenda
 
+Accordion
+- [ ] Accordion hover action (invert button color);
+- [ ] Include arrow
+- [ ] make arrow rotate
+- [ ] Section banner
+- [ ] Accessibility 
+
+Form
+
 - [ ] Fazer readme
 
 
