@@ -16,6 +16,7 @@
    <link rel="stylesheet" href="../assets/css/banner.css">
    <link rel="stylesheet" href="../assets/css/form-ingresso.css">
    <script src="../assets/js/headerLineAnimation.js" type="module" defer></script>
+   <script src="../assets/js/formValidation.js" type="module" defer></script>
    <title>CodeChella</title>
 </head>
 <body>
@@ -61,17 +62,17 @@
       <h2>Preencha o formulário a seguir:</h2>
       <form>
          <div>
-            <input type="text" id="name" name="name" placeholder=" ">
+            <input type="text" id="name" name="name" placeholder=" " pattern="[a-zA-ZÀ-ÿ]{2,} [a-zA-ZÀ-ÿ]{2,}" required>
             <label for="name">Nome completo</label>
          </div>
          <div>
-            <input type="email" id="email" name="email" placeholder=" ">
+            <input type="email" id="email" name="email" placeholder=" " required>
             <label for="email">Email</label>
          </div>
          <div>
             <label for="type">Tipo de ingresso</label>
-            <select id="type" name="type">
-               <option value=" "> </option>
+            <select id="type" name="type" required>
+               <option value=""></option>
                <option value="Pista Comum">Pista Comum</option>
                <option value="Pista Premium">Pista Premium</option>
                <option value="Cadeiras Térreo">Cadeiras Térreo</option>
@@ -80,7 +81,7 @@
          </div>
          <div>
             <label for="date">Data de nascimento</label>
-            <input type="date" id="date" name="date"> 
+            <input type="date" id="date" name="date" required> 
          </div>
          <button>Avançar!</button>
       </form>

@@ -16,6 +16,7 @@
    <link rel="stylesheet" href="../assets/css/banner.css">
    <link rel="stylesheet" href="../assets/css/seu-ingresso.css">
    <script src="../assets/js/headerLineAnimation.js" type="module" defer></script>
+   <script src="../assets/js/getTicketInformation.js" type="module" defer></script>
    <title>CodeChella</title>
 </head>
 <body>
@@ -46,7 +47,7 @@
                         <a href="../pages/informacoes.html">Informações</a>
                      </li>
                      <li>
-                        <a href="#">Ingresso</a>
+                        <a href="../pages/ingressos.html">Ingresso</a>
                      </li>
                   </ul>
                </div>
@@ -69,10 +70,10 @@
                <img class="qr-code" src="../assets/images/qr-code.png" alt="QR Code com link para ingresso">
             </div>
             <div>
-               <p>Nome Sobrenome</p>
+               <p id="ticket-name">Nome Sobrenome</p>
                <p>Ingresso</p>
-               <p>Setor</p>
-               <p>Data: </p>
+               <p id="ticket-type">Setor</p>
+               <p>Data: 21/03</p>
                <p>Local: Toronto/ON</p>      
             </div>
          </div>
