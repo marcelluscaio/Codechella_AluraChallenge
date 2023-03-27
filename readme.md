@@ -69,7 +69,7 @@ Accordion
 - [X] Accordion hover action (invert button color);
 - [X] Include arrow
 - [X] make arrow rotate
-- [ ] Section banner
+- [X] Section banner
 - [X] Accessibility 
 
 Form
