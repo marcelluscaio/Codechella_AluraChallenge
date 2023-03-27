@@ -13,8 +13,8 @@ Your favorite coding festival (Readme under construction)
 
 ## Features
 
-:gear: Animation on molecule; <br>
-:on: Header with animated underline on hover; <br>
+:gear: Animation on navigation, banner, lineup, burger menu, accordion, and form; <br>
+:on:Image optiization; <br>
 :five: Pentagon-shaped section; <br>
 :label: Forms built with animated label as placeholder; <br>
 :iphone: Responsive design; <br>

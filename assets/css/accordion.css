@@ -41,8 +41,8 @@
 
    width: 0;
    height: 0;
-   border-top: .6em solid var(--colorText);
-   border-left: .2em solid transparent;
+   border-top: .5em solid var(--colorText);
+   border-left: .25em solid transparent;
    border-right: .25em solid transparent;
 
    transition: transform 1s ease-in-out;
@@ -65,7 +65,7 @@
 }
 
 .accordion button[aria-expanded="true"]::after{
-   border-top: .6em solid var(--colorMain);
+   border-top: .5em solid var(--colorMain);
 
    transform: translateY(-50%) rotate(180deg);
 }
