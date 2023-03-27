@@ -55,29 +55,34 @@
       </nav>   
    </header>
    <section class="banner">
-      <h1>Garante seu Ingresso</h1>
+      <h1>Garanta seu Ingresso</h1>
    </section>
-   <section class="form-ingresso">
+   <section class="form-ingresso container">
       <h2>Preencha o formulário a seguir:</h2>
       <form>
          <div>
+            <input type="text" id="name" name="name" placeholder=" ">
             <label for="name">Nome completo</label>
-            <input type="text" id="name" name="name">
          </div>
          <div>
+            <input type="email" id="email" name="email" placeholder=" ">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email">
          </div>
          <div>
             <label for="type">Tipo de ingresso</label>
-            <input type="text" id="type" name="type">
+            <select id="type" name="type">
+               <option value=" "> </option>
+               <option value="Pista Comum">Pista Comum</option>
+               <option value="Pista Premium">Pista Premium</option>
+               <option value="Cadeiras Térreo">Cadeiras Térreo</option>
+               <option value="Cadeiras Superiores">Cadeiras Superiores</option>
+            </select>
          </div>
          <div>
             <label for="date">Data de nascimento</label>
-            <input type="date" id="date" name="date" > 
+            <input type="date" id="date" name="date"> 
          </div>
-
-
+         <button>Avançar!</button>
       </form>
    </section>
    <footer>
