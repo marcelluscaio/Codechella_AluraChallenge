@@ -66,11 +66,11 @@ page setores
 - [ ] Acertar o svg e fazer seleção ligada à legenda
 
 Accordion
-- [ ] Accordion hover action (invert button color);
-- [ ] Include arrow
-- [ ] make arrow rotate
+- [X] Accordion hover action (invert button color);
+- [X] Include arrow
+- [X] make arrow rotate
 - [ ] Section banner
-- [ ] Accessibility 
+- [X] Accessibility 
 
 Form
 - [ ] Make action

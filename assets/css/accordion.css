@@ -13,6 +13,8 @@
 }
 
 .accordion button{
+   position: relative;
+   
    width: 100%;
    padding: .5em;
    background-color: var(--colorMain);
@@ -29,12 +31,43 @@
    cursor: pointer;
 }
 
+.accordion button::after{
+   content: '';
+
+   position: absolute;
+   right: .5em;
+   top: 50%;
+   transform: translateY(-50%);
+
+   width: 0;
+   height: 0;
+   border-top: .6em solid var(--colorText);
+   border-left: .2em solid transparent;
+   border-right: .25em solid transparent;
+
+   transition: transform 1s ease-in-out;
+}
+
 .accordion button:hover{
    filter: brightness(.75);
 }
 
 .accordion button:focus-visible{
-   filter: brightness(.75);
+   filter: brightness(.5);
+}
+
+.accordion button[aria-expanded="true"]{
+   background-color: var(--colorText);
+
+   color: var(--colorMain);
+
+   filter: brightness(1);
+}
+
+.accordion button[aria-expanded="true"]::after{
+   border-top: .6em solid var(--colorMain);
+
+   transform: translateY(-50%) rotate(180deg);
 }
 
 .accordion li > div{
