@@ -73,7 +73,8 @@
    isolation: isolate;
 }
 
-.banner--informacoes::after{
+.banner--informacoes::after,
+.banner--ingressos::after{
    content: '';
 
    position: absolute;
@@ -82,6 +83,18 @@
    background-image: var(--gradient-1);
 
    mix-blend-mode: multiply;
+}
+
+.banner--ingressos{
+   position: relative;
+   
+   background-image: url('../images/banner-formulario.webp');
+   background-attachment: unset;
+   background-size: cover;
+   background-position: center;
+
+   isolation: isolate;
+
 }
 
 .banner > h1{
@@ -114,7 +127,8 @@
 
 .banner--experiencia > h1,
 .banner--setores > h1,
-.banner--informacoes > h1{
+.banner--informacoes > h1,
+.banner--ingressos > h1{
    z-index: 1;
 }
 
@@ -132,7 +146,8 @@
    }   
 
    .banner--second,
-   .banner--informacoes{
+   .banner--informacoes,
+   .banner--ingressos{
       background-size: cover;
       background-position: center;
    }
@@ -181,7 +196,8 @@
       background-position: left 70% bottom 0, 100%;
    }
 
-   .banner--informacoes{
+   .banner--informacoes,
+   .banner--ingressos{
       background-position: left 50% bottom 25%;
    }
 }
