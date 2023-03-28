@@ -31,7 +31,6 @@ function getValidityState(field){
 function showMessage(field, error){
    const errorField = document.querySelector(`label[for=${field}] span`);
    errorField.textContent = errors[field][error];
-   console.log(field, error);
 }
 
 function eraseMessage(field){
@@ -49,7 +48,6 @@ function validateOnBlur(field){
 }
 
 function isOldEnough(birthDate){
-   console.log(birthDate);
    const birthYear = birthDate.getFullYear();
    const birthMonth = birthDate.getMonth();
    const birthDay = birthDate.getDate();
@@ -74,6 +72,7 @@ function validateOnSubmit(field){
       validityState = isOldEnough(new Date(`${field.value}T00:00`))
    };
    validityState === 'valid' ? eraseMessage(field.name) : showMessage(field.name, validityState);
+   return validityState;
 }
 
 form.setAttribute('novalidate', true);
@@ -83,16 +82,17 @@ fields.forEach(field => field.addEventListener('blur', (e) => validateOnBlur(e.t
 form.addEventListener('submit', (e) => {
    e.preventDefault();
    form.classList.add('submitted');
-   fields.forEach(field => validateOnSubmit(field)); 
-});
-
-/*  let date = `${e.target[3].value}T00:00`;
-   if(isOldEnough(new Date(date))){
-      console.log("entrou");
-      sessionStorage.setItem("name", e.target[0].value);
-      sessionStorage.setItem("type", e.target[2].value);
+   let valid = true;
+   fields.forEach(field => {
+         const status = validateOnSubmit(field);
+         if(status !== 'valid'){
+            valid = false;
+         }
+      }
+   );
+   if(valid){
+      sessionStorage.setItem("name", fields[0].value);
+      sessionStorage.setItem("type", fields[2].value);
       location.href = "../pages/seu-ingresso.html"
-   } */
-
-
-
+   }
+});
