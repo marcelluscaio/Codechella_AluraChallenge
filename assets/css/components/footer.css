@@ -6,6 +6,12 @@ footer{
    text-align: center;
 }
 
+footer ::selection{
+   background-color: var(--colorText);
+
+   color: var(--colorMain);
+}
+
 footer h2,
 footer h3{
    margin-bottom: calc(var(--fs-1) / 2);
