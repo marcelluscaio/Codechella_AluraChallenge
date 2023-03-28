@@ -13,7 +13,8 @@ const errors = {
       'valueMissing': "Preencha todos os campos"
    },
    'date': {
-      'valueMissing': "Preencha todos os campos"
+      'valueMissing': "Preencha todos os campos",
+      'underAge': "Você deve ter mais que 14 anos"
    }
 };
 
@@ -47,10 +48,32 @@ function validateOnBlur(field){
    }
 }
 
-function validateOnSubmit(field){
-   const validityState = getValidityState(field);
-   showMessage(field.name, validityState);
+function isOldEnough(birthDate){
+   console.log(birthDate);
+   const birthYear = birthDate.getFullYear();
+   const birthMonth = birthDate.getMonth();
+   const birthDay = birthDate.getDate();
+   
+   const today = new Date();
+   const currentYear = today.getFullYear();
+   const currentMonth = today.getMonth();
+   const currentDay = today.getDate();
+   
+   const age = currentYear - birthYear;
 
+   const didntCelebrateBirthday = (currentMonth - birthMonth) < 0 || (currentMonth - birthMonth === 0 && currentDay < birthDay);
+   if(didntCelebrateBirthday){
+      age--;
+   }
+   return age < 14 ? 'underAge' : 'valid'; 
+}
+
+function validateOnSubmit(field){
+   let validityState = getValidityState(field);
+   if(field.name === 'date' && validityState === 'valid'){
+      validityState = isOldEnough(new Date(`${field.value}T00:00`))
+   };
+   validityState === 'valid' ? eraseMessage(field.name) : showMessage(field.name, validityState);
 }
 
 form.setAttribute('novalidate', true);
@@ -60,7 +83,7 @@ fields.forEach(field => field.addEventListener('blur', (e) => validateOnBlur(e.t
 form.addEventListener('submit', (e) => {
    e.preventDefault();
    form.classList.add('submitted');
-   fields.forEach(field => validateOnSubmit(field));  
+   fields.forEach(field => validateOnSubmit(field)); 
 });
 
 /*  let date = `${e.target[3].value}T00:00`;
@@ -71,12 +94,5 @@ form.addEventListener('submit', (e) => {
       location.href = "../pages/seu-ingresso.html"
    } */
 
-function isOldEnough(birthDate){
-   const today = new Date();
-   const birthYear = birthDate.getFullYear();
-   const currentYear = today.getFullYear();
 
-   return currentYear - birthYear >= 14 ? true : false;
-   //Make this better
-}
 
