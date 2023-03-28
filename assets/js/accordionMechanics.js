@@ -2,8 +2,6 @@ const accordionButtons = document.querySelectorAll(".accordion button");
 const accordionContent = document.querySelectorAll(".accordion li div");
 const accordionLinks = document.querySelectorAll(".accordion li div a");
 
-
-
 function showContent(button, content){
    accordionContent.forEach((box, index) => hideContent(accordionButtons[index], box));
    content.classList.add('show-content');

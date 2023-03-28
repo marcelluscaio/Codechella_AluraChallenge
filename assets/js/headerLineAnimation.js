@@ -18,4 +18,3 @@ menuItems.forEach(item => item.addEventListener("mouseout", () =>
       }, 1000);
    })
 );
-

@@ -22,22 +22,4 @@ const throttle = (myFunction, timeout) => {
    };
 };
 
-/* const throttle = (myFunction, timeout = 750) => {
-   let counter = 0;
-   let wait = false;
-   return (...functionArguments) =>  {
-      if(wait) return;
-
-      wait = true;
-      myFunction(...functionArguments);
-      counter++;
-      console.log(counter);
-      setTimeout(() =>{
-         wait = false;
-      }
-      , timeout);
-   };
-}; */
-
-
 export {throttle};

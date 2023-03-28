@@ -1,0 +1,23 @@
+.error-404{
+   padding-block: 20vh
+}
+
+.error-404 > h1{
+   margin-bottom: 1em;
+
+   color: var(--colorText);
+   font-family: var(--ff-calistoga);
+   font-weight: var(--fw-1);
+   font-size: var(--fs-5);
+   line-height: 1.25;
+   text-align: center;
+}
+
+.error-404 > p{
+   color: var(--colorText);
+   font-family: var(--ff-calistoga);
+   font-weight: var(--fw-1);
+   font-size: var(--fs-3);
+   line-height: 1.25;
+   text-align: center;
+}
