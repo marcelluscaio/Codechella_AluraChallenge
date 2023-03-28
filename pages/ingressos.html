@@ -63,14 +63,14 @@
       <form>
          <div>
             <input type="text" id="name" name="name" placeholder=" " pattern="[a-zA-ZÀ-ÿ]{2,} [a-zA-ZÀ-ÿ]{2,}" required>
-            <label for="name">Nome completo</label>
+            <label for="name">Nome completo<span></span></label>
          </div>
          <div>
             <input type="email" id="email" name="email" placeholder=" " required>
-            <label for="email">Email</label>
+            <label for="email">Email<span></span></label>
          </div>
          <div>
-            <label for="type">Tipo de ingresso</label>
+            <label for="type">Tipo de ingresso<span></span></label>
             <select id="type" name="type" required>
                <option value=""></option>
                <option value="Pista Comum">Pista Comum</option>
@@ -80,8 +80,8 @@
             </select>
          </div>
          <div>
-            <label for="date">Data de nascimento</label>
-            <input type="date" id="date" name="date" required> 
+            <label for="date">Data de nascimento<span></span></label>
+            <input type="date" id="date" name="date" placeholder=" " required> 
          </div>
          <button>Avançar!</button>
       </form>

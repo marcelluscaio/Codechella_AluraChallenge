@@ -50,12 +50,21 @@
    font-size: var(--fs-3);
 }
 
+.form-ingresso label > span{
+   margin-left: .75em;
+   
+   color: var(--color-sector-2);
+   font-family: var(--ff-raleway);
+   font-weight: var(--fw-3);
+   font-size: var(--fs-1);
+   line-height: 1.17;
+}
+
 .form-ingresso input,
 .form-ingresso select{
-
    width: 100%;
    padding: .5em;
-   border: 0;
+   border: 2px solid transparent;
 
    color: var(--colorShadow);
    font-family: var(--ff-raleway);
@@ -64,8 +73,17 @@
    line-height: 1.17;
 }
 
+.form-ingresso input:not(:placeholder-shown, [type="date"]):invalid{
+   border: 2px solid var(--color-sector-2);
+}
+
+.form-ingresso input:valid{
+   border: 2px solid var(--color-sector-1);
+}
+
 .form-ingresso input:focus + label,
-.form-ingresso input:not(:placeholder-shown) + label{
+.form-ingresso input:not(:placeholder-shown) + label,
+.submitted div:nth-child(-n + 2) label{
    bottom: calc(100% - var(--fs-3));
    /*I set it 100% minus the element size*/
    left: 0;
