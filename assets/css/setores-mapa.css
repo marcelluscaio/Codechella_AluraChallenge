@@ -29,12 +29,20 @@
 }
 
 .setores-mapa svg .verde:hover,
+.setores-mapa svg .verde:focus,
 .setores-mapa svg .azul:hover,
+.setores-mapa svg .azul:focus,
 .setores-mapa svg .rosa:hover,
+.setores-mapa svg .rosa:focus,
 .setores-mapa svg .roxo:hover,
+.setores-mapa svg .roxo:focus,
 .setores-mapa svg .rampa:hover,
+.setores-mapa svg .rampa:focus,
 .setores-mapa svg .rampa:hover + .rampa-icone,
-.setores-mapa svg .rampa:hover + .rampa-icone + .rampa-icone{
+.setores-mapa svg .rampa:focus + .rampa-icone,
+.setores-mapa svg .rampa:hover + .rampa-icone + .rampa-icone,
+.setores-mapa svg .rampa:focus + .rampa-icone + .rampa-icone{
+   outline: none;
    transform: translate(.5vw, .5vw);
    filter: brightness(1.25);
 }
@@ -47,11 +55,11 @@
    transition: transform .5s ease-in-out .15s;
 }
 
-svg:has(.verde:hover) + .setores-mapa__caption .caption__green,
-svg:has(.azul:hover) + .setores-mapa__caption .caption__blue,
-svg:has(.rosa:hover) + .setores-mapa__caption .caption__pink,
-svg:has(.roxo:hover) + .setores-mapa__caption .caption__purple,
-svg:has(.rampa:hover) + .setores-mapa__caption .caption__ramp{
+svg:has(.verde:is(:hover, :focus)) + .setores-mapa__caption .caption__green,
+svg:has(.azul:is(:hover, :focus)) + .setores-mapa__caption .caption__blue,
+svg:has(.rosa:is(:hover, :focus)) + .setores-mapa__caption .caption__pink,
+svg:has(.roxo:is(:hover, :focus)) + .setores-mapa__caption .caption__purple,
+svg:has(.rampa:is(:hover, :focus)) + .setores-mapa__caption .caption__ramp{
    transform: translateX(-1.25vw);
    filter: brightness(1.25);
 }

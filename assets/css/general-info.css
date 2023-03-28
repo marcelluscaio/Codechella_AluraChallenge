@@ -90,6 +90,10 @@
    font-size: var(--fs-1);
    line-height: 2;
    text-decoration: none;
+
+   transition: transform .15s ease-in-out,
+               box-shadow .15s ease-in-out,
+               filter .25s ease-in;
 }
 
 .general-info > article > a::after{
@@ -107,6 +111,19 @@
    background-repeat: no-repeat;
    background-size: contain;
    background-position: 50% 50%;
+}
+
+.general-info > article > a:hover{
+   filter: brightness(1.25);
+}
+
+.general-info > article > a:focus{
+   filter: brightness(1.25);
+}
+
+.general-info > article > a:active{
+   box-shadow: .1em .1em .05em var(--colorShadow);
+   transform: scale(.98);
 }
 
 /*720px*/

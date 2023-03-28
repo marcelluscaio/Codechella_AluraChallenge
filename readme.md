@@ -139,11 +139,6 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [X] General info tablet
 - [X] General info desktop
 - [X] Line-up Padding
- -[ ] Usar grid no lineup
-   3
-   4
-   3
-   5
 - [X] Line-up font
 - [X] Set Selection
 - [X] Banner footer
@@ -155,7 +150,6 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [X] Throttle scroll event
 - [X] Make throttle get last action
 - [X] Unmount function after all has appeared
-- [ ] Set role to li in footer socials media?
 
 page experiencia
 - [X] Banner on mobile
@@ -168,14 +162,15 @@ page setores
 - [X] Banner
 - [X] Banner responsivity
 - [X] Create cards
-- [ ] Enhance color-scheme at mapa - Change color in legenda and change svg accordingly
+- [X] Enhance color-scheme at mapa - Change color in legenda and change svg accordingly
+- [X] Map can be navigated by tab
 
-- [ ] Normalizar margens (dentro de um elemento tem que ser todas iguais)
-- [ ] Fazer navegação de tab nas redes sociais footer
-- [ ] Fazer select no footer
+- [X] Normalizar margens (dentro de um elemento tem que ser todas iguais)
+- [X] Fazer navegação de tab nas redes sociais footer
+- [X] Fazer select no footer
 - [X] Padding top seção mapa de setores (Legenda desce)
 - [X] Acertar borderradius das fotos cards mapa setores (tablet talvez e desktop com certeza)
-- [ ] Acertar o svg e fazer seleção ligada à legenda
+- [X] Acertar o svg e fazer seleção ligada à legenda
 
 Accordion
 - [X] Accordion hover action (invert button color);
@@ -283,3 +278,5 @@ Ver os nth child
    Criei o efeito degradê colocando o bg como pseudoelemento e aplicando opacidade nele. 
    Precisei ajustar z-index e a interação dele com o header.
    Apliquei z-index no header, e isolation na section, bem como z-index no h1
+
+   Use of focus within to style li on footer

@@ -74,9 +74,11 @@ footer address li:nth-child(5){
    -webkit-mask-size: contain;
 }
 
-footer address li:hover{   
+footer address li:hover,
+footer address li:focus-within{   
    background-position: 0 0;
 }
+
 
 footer address li > a{
    display: inline-block;

@@ -56,7 +56,6 @@
    width: 100%;
    padding: .5em;
    border: 0;
-   outline: transparent; 
 
    color: var(--colorShadow);
    font-family: var(--ff-raleway);
@@ -84,9 +83,7 @@
    margin-inline: auto;
    background-color: var(--colorMain);
    border: none;
-   outline: transparent;
    border-radius: .75em;
-
    box-shadow: .4em .4em .4em var(--colorShadow);
    
    color: var(--colorText);
@@ -96,6 +93,9 @@
    line-height: 2;
 
    cursor: pointer;
+   transition: transform .15s ease-in-out,
+               box-shadow .15s ease-in-out,
+               filter .25s ease-in;
 }
 
 .form-ingresso button::after{
@@ -112,14 +112,20 @@
    background-image: url('../images/arrow.svg');
    background-repeat: no-repeat;
    background-size: contain;
-   background-position: 50% 50%;
-
-
+   background-position: 50% 50%;   
 }
 
-.form-ingresso button{
-/*active, hover, focus*/
+.form-ingresso button:hover,
+.form-ingresso button:focus
+{
+   filter: brightness(1.25);
 }
+
+.form-ingresso button:active{
+   box-shadow: .3em .3em .2em var(--colorShadow);
+   transform: scale(.98);
+}
+
 
 /*720px*/
 @media screen and (min-width: 45em) {
