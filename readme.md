@@ -40,6 +40,13 @@ Animation on accordion movement and arrow; <br>
 Accordion can be navigated with keyboard; <br>
 Accordion links are only accessible when the content is open 
 
+### Ingresso
+Label animation; <br>
+Form validation with custom error display; <br>
+Button Arrow Animation on hover and focus
+
+### Seu Ingresso
+QR Code takes to my github page;
 
 
 
