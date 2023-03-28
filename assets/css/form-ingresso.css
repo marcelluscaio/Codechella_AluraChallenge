@@ -42,7 +42,8 @@
 
 .form-ingresso div:nth-child(-n + 2) label{
    position: absolute;
-   bottom: 0;
+   bottom: .25em;
+   /* As label already has margin-bottom of .25em, it needs bottom .25em to be aligned in the middle (padding bottom of input is .5em).*/
    left: 0.5em;
 
    color: var(--colorShadow);
@@ -53,7 +54,7 @@
 .form-ingresso select{
 
    width: 100%;
-   padding: .25em .5em;
+   padding: .5em;
    border: 0;
    outline: transparent; 
 
@@ -77,15 +78,16 @@
 .form-ingresso button{
    display: block;
 
-   width: 54%;
+   min-width: 54%;
    padding-block: .5em;
+   padding-inline: .5em 1em;
    margin-inline: auto;
    background-color: var(--colorMain);
    border: none;
    outline: transparent;
    border-radius: .75em;
 
-   box-shadow: .2em .2em .1em var(--colorShadow);
+   box-shadow: .4em .4em .4em var(--colorShadow);
    
    color: var(--colorText);
    font-family: var(--ff-raleway);
@@ -94,6 +96,29 @@
    line-height: 2;
 
    cursor: pointer;
+}
+
+.form-ingresso button::after{
+   content: '';
+
+   display: inline-block;
+
+   position: relative;
+   top: calc(var(--fs-2) / 9);
+   left: var(--fs-2);
+
+   width: var(--fs-2);
+   height: var(--fs-2);
+   background-image: url('../images/arrow.svg');
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: 50% 50%;
+
+
+}
+
+.form-ingresso button{
+/*active, hover, focus*/
 }
 
 /*720px*/

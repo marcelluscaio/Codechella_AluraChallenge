@@ -14,10 +14,12 @@ Your favorite coding festival (Readme under construction)
 ## Features
 
 :gear: Animation on navigation, banner, lineup, burger menu, accordion, and form; <br>
-:on:Image optiization; <br>
+:on:Image optiization usin webp; <br>
+Parallax effect on banner
+Banner images framed properly
 :five: Pentagon-shaped section; <br>
 :label: Forms built with animated label as placeholder; <br>
-:iphone: Responsive design; <br>
+:iphone: Responsive design from 320px to 2500px; <br>
 :fountain_pen: Fluid typography
 
 ## Some techniques used

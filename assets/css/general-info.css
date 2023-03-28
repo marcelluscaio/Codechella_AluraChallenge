@@ -45,7 +45,7 @@
 
 .general-info > article > h2,
 .general-info--experiencia > div > article > h2{
-   margin-bottom: .75em;
+   margin-bottom: calc(var(--fs-3) * .75);
 
    font-weight: var(--fw-3);
    font-size: var(--fs-3);
@@ -62,7 +62,7 @@
 
 .general-info > article > p,
 .general-info--experiencia > div > article > p{
-   margin-bottom: 0.92em;
+   margin-bottom:calc(var(--fs-3) * .75);
    
    font-weight: var(--fw-2);
    font-size: var(--fs-1);
@@ -78,6 +78,7 @@
    
    width: 100%;
    max-width: 20.5em;
+   /*This is a bit of magic numbering, but I wanted it to be 100% on 360px, and stop growing at a certain width. And I wanted that width to be linked to the fontsize, to avoid overflow*/
    padding-block: .5em;
    background-color: var(--colorMain);
    border-radius: .75em;
