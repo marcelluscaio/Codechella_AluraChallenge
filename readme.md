@@ -14,18 +14,18 @@ Your favorite coding festival (Readme under construction)
 ## Features
 
 ### General
-Built with without the use of libraries or frameworks; <br>
-Animation on header on hover (desktop) 
-Animation on burger menu (mobile); <br>
-Animation on banner's header; <br>
-:on:Image optimization usin webp; <br>
-Banner images framed properly from 320px to 2500px; <br>
+:weight_lifting: Built without the use of libraries or frameworks; <br>
+:roller_coaster: Animation on header on hover (desktop); <br>
+:hamburger: Animation on burger menu (mobile); <br>
+:ferris_wheel: Animation on banner's header; <br>
+:spider_web: Image optimization usin webp; <br>
+:framed_picture: Banner images framed properly from 320px to 2500px; <br>
 :iphone: Responsive design from 320px to 2500px; <br>
 :fountain_pen: Fluid typography; <br>
-Social network icons with background animation on hover and focus
-Custom scrollbar; <br>
-Custom selection (try selecting text with your mouse); <br>
-Keyboard-navigation friendly
+:roller_coaster: Social network icons with background animation on hover and focus; <br>
+:barber: Custom scrollbar; <br>
+:computer_mouse: Custom selection (try selecting text with your mouse); <br>
+:keyboard: Keyboard-navigation friendly
 
 ### Home
 Parallax banner
