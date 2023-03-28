@@ -99,8 +99,15 @@ But on desktop they are not 100% of the container anymore. So I changed it:
    /*For the border-radius I calculated the image's width: 100% - gap (~ 3.4%) / 3. I then applied the rule of three with 4.5vw -> 100% and 32% -> 1.44vw  */
 }
 ```
+### Banner effect
+The images used on banners used different techniques to make the blend-mode. On a experiência, for example, I used a pseudoelement with opacity over the image - since setting opacity to the element itself would affect the header.
+That disrupted the menu animation, so I fixed it using isolation on the section, and setting the header z-index to 1.
 
+### Use of focus withn to animate social network on focus
+When the li was hovered I had the background animation, but when focusing it wouldn't trigger. It was happening because the tab was targeting the anchor tag inside of the li. I could have worked it out with :has pseudoclass, but that wouldn't cover FireFox (please FireFox, I've never asked you anything). My solution was to use focus-within on the li.
 
+## Tasks
+### Home
 - [X] Structure whole HTML
 - [X] Create reset css
 - [X] Create color structure
@@ -112,7 +119,7 @@ But on desktop they are not 100% of the container anymore. So I changed it:
 - [X] Create burger menu with label
 - [X] Style menu options
 - [X] Header on desktop
-- [X]  Make font better on 1440px
+- [X] Make font better on 1440px
 - [X] Adjust lineup distribution
 - [X] Set scrollbar
 - [X] Make burger animation
@@ -135,132 +142,30 @@ But on desktop they are not 100% of the container anymore. So I changed it:
 - [X] Make throttle get last action
 - [X] Unmount function after all has appeared
 
-page experiencia
+### Experiência
 - [X] Banner on mobile
 - [X] Filter on banner
 - [X] Tablet
 - [X] Desktop
 - [X] General info section
 
-page setores
+### Setores
 - [X] Banner
 - [X] Banner responsivity
 - [X] Create cards
-- [X] Enhance color-scheme at mapa - Change color in legenda and change svg accordingly
+- [X] Enhance color-scheme. Change color in legenda and change svg accordingly
 - [X] Map can be navigated by tab
 
-- [X] Normalizar margens (dentro de um elemento tem que ser todas iguais)
-- [X] Fazer navegação de tab nas redes sociais footer
-- [X] Fazer select no footer
-- [X] Padding top seção mapa de setores (Legenda desce)
-- [X] Acertar borderradius das fotos cards mapa setores (tablet talvez e desktop com certeza)
-- [X] Acertar o svg e fazer seleção ligada à legenda
-
-Accordion
+### Accordion
 - [X] Accordion hover action (invert button color);
 - [X] Include arrow
-- [X] make arrow rotate
+- [X] Make arrow rotate
 - [X] Section banner
 - [X] Accessibility 
 
-Form
-- [ ] Make action
-- [ ] Test keyboard navigation
-- [ ] Focus, hover, 
-
-- [ ] Fazer readme
-
-
-
-
-
-- 23 (quinta)
-Fazer a parte de setores
-
-- 24 (sexta)
-Informações gerais (acordeon)
-
-- 25 (sabado)
-Garanta seu ingresso
-(Fazer label flutuante)
-
-- 26 (domingo)
-Uhul seu ingresso está aqui
-Fechar
-
-- 27
-Revisão
-
-
-Project checklist
-- Whole html
-- Define Colors
-- Define Font
-- Define Section paddings (Padding block and width)
-- Style each section
-
-Section checklist
-- Padding
-- Font
-- Images
-
-Fontes em 1440
-64
-48
-40
-32
-20
-
-
-
-
-Ver os nth child
-/* 
-   .lineup li:nth-child(n + 2):nth-child(-n + 9){
-      min-width: calc(50% - (var(--gap) / 2));
-   }
-
-   .lineup li:nth-child(n + 2):nth-child(-n + 9):nth-child(2n - 1){
-      text-align: left;
-   }
-
-   .lineup li:nth-child(n + 2):nth-child(-n + 9):nth-child(2n){
-      text-align: right;
-   }
-
-   .lineup li:nth-child(n + 2):nth-child(-n + 9):nth-child(4n + 2),
-   .lineup li:nth-child(n + 2):nth-child(-n + 9):nth-child(4n + 3){
-      transform: translateX(-.25em);
-   }
-
-   .lineup li:nth-child(n + 2):nth-child(-n + 9):nth-child(4n),
-   .lineup li:nth-child(n + 2):nth-child(-n + 9):nth-child(4n + 1){
-      transform: translateX(.25em);
-   } */
-/* 
-   .lineup li:nth-child(n + 2):nth-child(-n + 5):nth-child(2n){
-      min-width: calc(50% - (var(--gap) / 2));
-   }
-
-   .lineup li:nth-child(n + 2):nth-child(-n + 5):nth-child(2n - 1){
-      min-width: calc(50% - (var(--gap) / 2));
-   }
-
-   .lineup li:nth-child(n + 6):nth-child(-n + 9):nth-child(2n){
-      min-width: calc(50% - (var(--gap) / 2));
-   }
-
-   .lineup li:nth-child(n + 6):nth-child(-n + 9):nth-child(2n - 1){
-      min-width: calc(50% - (var(--gap) / 2));
-   } */
-
-   Accordio transition? using max-height (cant use percentage)
-
-
-   Highlight:
-   - A experiência - Banner:
-   Criei o efeito degradê colocando o bg como pseudoelemento e aplicando opacidade nele. 
-   Precisei ajustar z-index e a interação dele com o header.
-   Apliquei z-index no header, e isolation na section, bem como z-index no h1
-
-   Use of focus within to style li on footer
+### Form
+- [X] General styling
+- [X] Test keyboard navigation
+- [X] Focus, hover, 
+- [X] Validate 
+- [X] Make action to another page
