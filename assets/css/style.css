@@ -55,6 +55,19 @@
    color: var(--colorText);
 }
 
+::-webkit-scrollbar {
+  width: .9vw;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--colorMain);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--colorSec);
+  border-radius: .45vw;
+}
+
 body{
    background-image: var(--gradient-1);
    background-repeat: no-repeat;

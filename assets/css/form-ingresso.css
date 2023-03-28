@@ -121,6 +121,21 @@
    filter: brightness(1.25);
 }
 
+.form-ingresso button:hover::after,
+.form-ingresso button:focus::after{
+   animation-name: move-arrow;
+   animation-duration: 1s;
+   animation-timing-function: cubic-bezier(0.89, 0.34, 0.26, 0.89);
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+@keyframes move-arrow {
+   to{
+      left: calc(var(--fs-2) * 2);
+   }
+}
+
 .form-ingresso button:active{
    box-shadow: .3em .3em .2em var(--colorShadow);
    transform: scale(.98);

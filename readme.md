@@ -130,7 +130,7 @@ https://trello.com/b/uZ4izZXN/challenge-alura
 - [X] Header on desktop
 - [X]  Make font better on 1440px
 - [X] Adjust lineup distribution
-- [ ] Set scrollbar
+- [X] Set scrollbar
 - [X] Make burger animation
 - [X] Make active link marking
 - [X] Make animation when hovering links
