@@ -12,6 +12,50 @@
    margin-bottom: calc(var(--fs-3) * 1.75);
 }
 
+.setores-mapa svg .verde,
+.setores-mapa svg .azul,
+.setores-mapa svg .rosa,
+.setores-mapa svg .roxo,
+.setores-mapa svg .rampa,
+.setores-mapa svg .rampa-icone{
+   transform-origin: center;
+
+   cursor: pointer;
+   transition: transform .5s ease-in-out .15s;
+}
+
+.rampa-icone{
+   pointer-events: none;
+}
+
+.setores-mapa svg .verde:hover,
+.setores-mapa svg .azul:hover,
+.setores-mapa svg .rosa:hover,
+.setores-mapa svg .roxo:hover,
+.setores-mapa svg .rampa:hover,
+.setores-mapa svg .rampa:hover + .rampa-icone,
+.setores-mapa svg .rampa:hover + .rampa-icone + .rampa-icone{
+   transform: translate(.5vw, .5vw);
+   filter: brightness(1.25);
+}
+
+.caption__green,
+.caption__blue,
+.caption__pink,
+.caption__purple,
+.caption__ramp{
+   transition: transform .5s ease-in-out .15s;
+}
+
+svg:has(.verde:hover) + .setores-mapa__caption .caption__green,
+svg:has(.azul:hover) + .setores-mapa__caption .caption__blue,
+svg:has(.rosa:hover) + .setores-mapa__caption .caption__pink,
+svg:has(.roxo:hover) + .setores-mapa__caption .caption__purple,
+svg:has(.rampa:hover) + .setores-mapa__caption .caption__ramp{
+   transform: translateX(-1.25vw);
+   filter: brightness(1.25);
+}
+
 .setores-mapa > div > h2{
    margin-bottom: var(--caption-spacing);
    
