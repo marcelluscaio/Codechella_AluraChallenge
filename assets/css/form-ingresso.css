@@ -65,6 +65,7 @@
    width: 100%;
    padding: .5em;
    border: 2px solid transparent;
+   border-radius: .75em;
 
    color: var(--colorShadow);
    font-family: var(--ff-raleway);
