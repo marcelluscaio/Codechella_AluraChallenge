@@ -169,3 +169,6 @@ When the li was hovered I had the background animation, but when focusing it wou
 - [X] Focus, hover, 
 - [X] Validate 
 - [X] Make action to another page
+
+### Extra
+- [ ] Adjust form

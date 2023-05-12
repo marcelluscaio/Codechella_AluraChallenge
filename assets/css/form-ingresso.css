@@ -151,7 +151,7 @@
 
 @keyframes move-arrow {
    to{
-      left: calc(var(--fs-2) * 2);
+      left: calc(var(--fs-2) * 1.5);
    }
 }
 
