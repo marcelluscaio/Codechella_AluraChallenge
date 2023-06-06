@@ -57,7 +57,7 @@ function isOldEnough(birthDate){
    const currentMonth = today.getMonth();
    const currentDay = today.getDate();
    
-   const age = currentYear - birthYear;
+   let age = currentYear - birthYear;
 
    const didntCelebrateBirthday = (currentMonth - birthMonth) < 0 || (currentMonth - birthMonth === 0 && currentDay < birthDay);
    if(didntCelebrateBirthday){
